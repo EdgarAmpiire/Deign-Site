@@ -1,6 +1,6 @@
 import {useEffect} from "react"
 import videobg from "../../../assets/videos/herobg.mp4";
-import { TypeAnimation } from "react-type-animation";
+// import { TypeAnimation } from "react-type-animation";
 import { Intro } from "./components/Intro";
 // import { MdKeyboardArrowDown } from "react-icons/md";
 // import { Photography } from "./components/Photography";
@@ -34,16 +34,16 @@ const Home = () => {
           muted
           className="object-cover absolute h-[105vh] w-screen -z-10 top-0 left-0 bg-[#010101]"></video>
           </div>
-        <div className="h-[105vh] w-full flex items-center justify-center pt-40 pb-72">
-          <div className="text-center leading-tight xs:px-2 lg:px-0">
-            <h1 className="text-white xs:text-4xl lg:text-5xl  font-normal lg:font-light tracking-tight">
-              We design and develope
+        <div className="h-[105vh] w-full flex items-start mx-12 justify-start pt-40 pb-72">
+          <div className="text-start leading-tight xs:px-2 lg:px-0">
+            <h1 className="text-[#37b767] text-6xl xs:text-4xl lg:text-5xl  font-bold lg:font-light tracking-tight">
+            Innovate Your Digital Future
             </h1>
             <h1 className="text-white xs:text-4xl lg:text-5xl xs:mt-5 font-normal lg:font-light tracking-tight">
-              great brands through
+            Elevating businesses with cutting-edge IT solutions, exceptional web design, and powerful digital strategies.
             </h1>
 
-            <h1 className="text-[#eb252a] xs:mt-6 lg:mt-6 font-light tracking-tight ">
+            {/* <h1 className="text-[#eb252a] xs:mt-6 lg:mt-6 font-light tracking-tight ">
               <span className="invisible">.</span>{" "}
               <span className="text-[#eb252a] xs:text-4xl lg:text-5xl font-bold tracking-tight">
                 <TypeAnimation
@@ -70,7 +70,7 @@ const Home = () => {
                   // style={{ fontSize: "2em", display: "inline-block" }}
                 />
               </span>{" "}
-            </h1>
+            </h1> */}
             
           </div>
         </div>

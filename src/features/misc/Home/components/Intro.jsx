@@ -16,7 +16,7 @@ export const Intro = () => {
         data-aos="fade-up"
         className="flex h-full lg:w-6/12 flex-col items-start justify-center lg:pr-28 xs:px-4 lg:px-0 ">
           <div>
-            <h1 className="text-4xl font-bold text-[#eb252a]  mb-10">
+            <h1 className="text-4xl font-bold text-[#37b767]  mb-10">
               Who we are
             </h1>
           </div>
