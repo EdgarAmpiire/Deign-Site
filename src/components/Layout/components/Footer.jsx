@@ -8,7 +8,7 @@ import { FaLocationDot } from "react-icons/fa6";
 import { FaPhoneAlt } from "react-icons/fa";
 
 export const Footer = () => {
-  return (
+  return ( 
     <div className="">
     <div className="lg:h-[30rem] lg:w-full ">
       <video
