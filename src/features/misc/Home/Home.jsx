@@ -1,5 +1,5 @@
 import {useEffect} from "react"
-import videobg from "../../../assets/videos/video2.mp4";
+import videobg from "../../../assets/videos/herobg.mp4";
 import { TypeAnimation } from "react-type-animation";
 import { Intro } from "./components/Intro";
 // import { MdKeyboardArrowDown } from "react-icons/md";
