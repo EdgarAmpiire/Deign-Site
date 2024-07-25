@@ -11,38 +11,38 @@ export const Team = () => {
   const items = [
     {
       id: 1,
-      name: "Amanya Kevin Brian",
-      title: "Team Leader",
-      img: kevin,
+      name: "Edgar Ampiire",
+      title: "Director",
+      img: edgar,
     },
     {
       id: 2,
-      name: "Samuel Ocan",
-      title: "Producer",
+      name: "Joshua Wadape",
+      title: "Project Manager",
       img: hope,
     },
     {
       id: 3,
-      name: "Edgar Ampiire",
-      title: "Project Manager",
-      img: edgar,
-    },
-    {
-      id: 4,
-      name: "Bill Olanya",
-      title: "Cinematographer",
+      name: "Jonathan Mwebaze",
+      title: "Software Developer",
       img: bill,
     },
     {
+      id: 4,
+      name: "Richard Luvubi",
+      title: "Network Engineer",
+      img: kevin,
+    },
+    {
       id: 5,
-      name: "Daniel Onen",
-      title: "Editor",
+      name: "Jeremiah Bamwine",
+      title: "Web Developer",
       img: dan,
     },
     {
       id: 6,
-      name: "Bob Arinaitwe",
-      title: "Sound Engineer",
+      name: "Chris Hakizimana",
+      title: "Graphics Designer",
       img: bob,
     },
   ];
@@ -84,11 +84,11 @@ export const Team = () => {
                     className="group h-[40vh] w-full bg-center bg-cover flex items-end justify-end cursor-pointer "
                     style={{ backgroundImage: `url(${i.img})` }}>
                     {/* //   <img src={edgar} alt="" className="" /> */}
-                    <div className="w-full py-3 px-3 border-t-2 border-[#eb252a] bg-transparent backdrop-blur-[14px] xs:opacity-100 lg:opacity-0 group-hover:opacity-100 group-hover:py-4 ease-in-out duration-500 ">
-                      <h1 className="text-white font-bold text-xl ">
+                    <div className="w-full py-3 px-3 border-t-2 border-[#37b767] bg-transparent backdrop-blur-[14px] xs:opacity-100 lg:opacity-0 group-hover:opacity-100 group-hover:py-4 ease-in-out duration-500 ">
+                      <h1 className="text-[white] font-bold text-xl ">
                         {i.name}
                       </h1>
-                      <p className="text-[#eb252a] font-semibold tracking-[-.05em]">
+                      <p className="text-[#37b767] font-semibold tracking-[-.05em]">
                         {i.title}
                       </p>
                     </div>
