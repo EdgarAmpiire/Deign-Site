@@ -49,19 +49,19 @@ export const Services = () => {
 
   return (
     <div>
-      <div className=" flex flex-col bg-black   items-center justify-center xs:py-8 lg:py-32 xs:px-4 lg:px-24">
+      <div className=" flex flex-col bg-[#042c3f]   items-center justify-center xs:py-8 lg:py-32 xs:px-4 lg:px-24">
         <div className="flex flex-col items-center justify-center w-12/12 xs:px-4 lg:px-24 mb-10">
           <div
           data-aos="fade-up"
           >
-            <h1 className="xs:text-3xl lg:text-4xl font-bold text-[#eb252a]">
+            <h1 className="xs:text-3xl text-7xl tracking-[-0.075em] lg:text-4xl font-bold text-[#37b767]">
               Check Our Services
             </h1>
           </div>
           <div
           data-aos="fade-up"
           className="mt-5 flex items-center justify-center">
-            <h1 className="text-2xl xs:text-left lg:text-center font-bold text-[#444444] tracking-[-.075em] font-outline-2  antialiased">
+            <h1 className="text-2xl xs:text-left lg:text-center font-bold text-white tracking-[-.075em] font-outline-2  antialiased">
               Pleasure rationally encounter consequences that are painful. Nor
               again is there anyone who pursues
             </h1>
