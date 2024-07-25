@@ -11,38 +11,38 @@ export const Team = () => {
   const items = [
     {
       id: 1,
-      name: "Amanya Kevin Brian",
-      title: "Team Leader",
-      img: kevin,
+      name: "Edgar Ampiire",
+      title: "Director",
+      img: edgar,
     },
     {
       id: 2,
-      name: "Samuel Ocan",
-      title: "Producer",
+      name: "Joshua Wadape",
+      title: "Project Manager",
       img: hope,
     },
     {
       id: 3,
-      name: "Edgar Ampiire",
-      title: "Project Manager",
-      img: edgar,
-    },
-    {
-      id: 4,
-      name: "Bill Olanya",
-      title: "Cinematographer",
+      name: "Jonathan Mwebaze",
+      title: "Software Developer",
       img: bill,
     },
     {
+      id: 4,
+      name: "Richard Luvubi",
+      title: "Network Engineer",
+      img: kevin,
+    },
+    {
       id: 5,
-      name: "Daniel Onen",
-      title: "Editor",
+      name: "Jeremiah Bamwine",
+      title: "Web Developer",
       img: dan,
     },
     {
       id: 6,
-      name: "Bob Arinaitwe",
-      title: "Sound Engineer",
+      name: "Chris Hakizimana",
+      title: "Graphics Designer",
       img: bob,
     },
   ];
@@ -54,19 +54,19 @@ export const Team = () => {
           <div className="h-fit w-fit overflow-hidden xs:gap-4 lg:gap-0 grid xs:grid-row-4 lg:grid-cols-4 justify-center items-center">
             <div className="h-[40vh] w-fit lg:col-span-2 flex flex-col items-start py-5 justify-start">
               <div data-aos="fade-up">
-                <h1 className="xs:text-5xl lg:text-4xl font-bold text-[#eb252a]">Our Team</h1>
+                <h1 className="xs:text-5xl text-6xl tracking-[-0.075em] lg:text-4xl font-bold text-[#37b767]">Our Team</h1>
                 <div
                   data-aos="fade-up"
-                  className="p-1 w-3/12 mt-2 bg-[#444444]"></div>
+                  className="p-1 w-3/12 mt-2 bg-[#042c3f]"></div>
               </div>
               <div data-aos="fade-up" className="mt-5 overflow-hidden pr-5">
-                <h1 className="xs:text-4xl  lg:text-3xl font-bold text-[#444444] tracking-[-.075em] font-outline-2  antialiased">
+                <h1 className="xs:text-4xl  lg:text-3xl font-bold text-[#042c3f] tracking-[-.075em] font-outline-2  antialiased">
                   Meet the team that helps to power your brand
                 </h1>
               </div>
               <Link to="/" data-aos="fade-up">
-                <div className="flex items-center mt-5 mr-0 w-fit gap-0 text-[#fefefe] text-opacity-0 hover:text-[#eb252a] hover:gap-3 ease-in duration-150   ">
-                  <p className=" pr-0 text-[#444444] xs:text-2xl lg:text-xl font-bold">
+                <div className="flex items-center mt-5 mr-0 w-fit gap-0 text-[#fefefe] text-opacity-0 hover:text-[#37b767] hover:gap-3 ease-in duration-150   ">
+                  <p className=" pr-0 text-[#042c3f] xs:text-2xl lg:text-xl font-bold">
                     See our work
                   </p>
                   <span className="">
@@ -84,11 +84,11 @@ export const Team = () => {
                     className="group h-[40vh] w-full bg-center bg-cover flex items-end justify-end cursor-pointer "
                     style={{ backgroundImage: `url(${i.img})` }}>
                     {/* //   <img src={edgar} alt="" className="" /> */}
-                    <div className="w-full py-3 px-3 border-t-2 border-[#eb252a] bg-transparent backdrop-blur-[14px] xs:opacity-100 lg:opacity-0 group-hover:opacity-100 group-hover:py-4 ease-in-out duration-500 ">
-                      <h1 className="text-white font-bold text-xl ">
+                    <div className="w-full py-3 px-3 border-t-2 border-[#37b767] bg-transparent backdrop-blur-[14px] xs:opacity-100 lg:opacity-0 group-hover:opacity-100 group-hover:py-4 ease-in-out duration-500 ">
+                      <h1 className="text-[white] font-bold text-xl ">
                         {i.name}
                       </h1>
-                      <p className="text-[#eb252a] font-semibold tracking-[-.05em]">
+                      <p className="text-[#37b767] font-semibold tracking-[-.05em]">
                         {i.title}
                       </p>
                     </div>
