@@ -23,7 +23,7 @@ const Home = () => {
   return (
     <div className="flex items-center justify-center">
 
-<div className="2xl:max-w-[95vh] 2xl:items-center 2xl:justify-center">
+<div className="2xl:max-w-[95vh] xl:items-center xl:justify-center">
       {/* <div className="h-screen -z-10 top-0 left-0 w-full bg-[#010101] bg-opacity-70"> */}
         <div className="">
 
