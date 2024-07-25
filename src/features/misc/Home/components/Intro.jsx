@@ -1,5 +1,5 @@
 // import { Link } from "react-router-dom";
-import bgImage from "../../../../assets/images/image.jpg";
+// import bgImage from "../../../../assets/images/image.jpg";
 import aboutusvideo from "../../../../assets/videos/aboutus.mp4";
 
 // import { BsArrowRight } from "react-icons/bs";
