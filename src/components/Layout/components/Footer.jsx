@@ -1,5 +1,5 @@
 import videography from "../../../assets/videos/footer7.mp4";
-import logo from "../../../assets/images/sml.png";
+import logo from "../../../assets/images/deign.png";
 import { FaFacebookF } from "react-icons/fa6";
 import { FaInstagram, FaWhatsapp } from "react-icons/fa";
 import { MdOutlineMailOutline, MdEmail } from "react-icons/md";
@@ -35,22 +35,22 @@ export const Footer = () => {
             <div className="flex gap-3 mt-10">
               <Link
                 to={"/"}
-                className="w-9  h-9 py-2 px-2 flex items-center justify-center bg-transparen bg-gray-700 bg-opacity-30 backdrop-blur-[8px] rounded-md hover:bg-[#eb252a] ease-in-out duration-300 transition">
+                className="w-9  h-9 py-2 px-2 flex items-center justify-center bg-transparen bg-gray-700 bg-opacity-30 backdrop-blur-[8px] rounded-md hover:bg-[#37b767] ease-in-out duration-300 transition">
                 <FaFacebookF className="w-5 h-5 text-white" />
               </Link>
               <Link
                 to={"/"}
-                className="w-9  h-9 py-2 px-2 flex items-center justify-center bg-transparen bg-gray-700 bg-opacity-30 backdrop-blur-[8px] rounded-md hover:bg-[#eb252a] ease-in-out duration-300 transition">
+                className="w-9  h-9 py-2 px-2 flex items-center justify-center bg-transparen bg-gray-700 bg-opacity-30 backdrop-blur-[8px] rounded-md hover:bg-[#37b767] ease-in-out duration-300 transition">
                 <FaInstagram className="w-5 h-5 text-white" />
               </Link>
               <Link
                 to={"/"}
-                className="w-9  h-9 py-2 px-2 flex items-center justify-center bg-transparen bg-gray-700 bg-opacity-30 backdrop-blur-[8px] rounded-md hover:bg-[#eb252a] ease-in-out duration-300 transition">
+                className="w-9  h-9 py-2 px-2 flex items-center justify-center bg-transparen bg-gray-700 bg-opacity-30 backdrop-blur-[8px] rounded-md hover:bg-[#37b767] ease-in-out duration-300 transition">
                 <FaWhatsapp className="w-5 h-5 text-white" />
               </Link>
               <Link
                 to={"/"}
-                className="w-9  h-9 py-2 px-2 flex items-center justify-center bg-transparen bg-gray-700 bg-opacity-30 backdrop-blur-[8px] rounded-md hover:bg-[#eb252a] ease-in-out duration-300 transition">
+                className="w-9  h-9 py-2 px-2 flex items-center justify-center bg-transparen bg-gray-700 bg-opacity-30 backdrop-blur-[8px] rounded-md hover:bg-[#37b767] ease-in-out duration-300 transition">
                 <MdOutlineMailOutline className="w-5 h-5 text-white" />
               </Link>
             </div>
@@ -58,36 +58,36 @@ export const Footer = () => {
 
           <div className="px-5 py-3">
             <div className="w-8/12 h-9/12">
-              <h1 className="text-2xl font-bold xs:text-[#eb252a] lg:text-white">Services</h1>
+              <h1 className="text-2xl font-bold xs:text-[#37b767] lg:text-white">Services</h1>
             </div>
             <div className="mt-12 flex flex-col gap-1">
               <Link to={"/"} className="group">
-                <h1 className="text-lg font-semi  text-white group-hover:text-[#eb252a] ease-in-out transition">
+                <h1 className="text-lg font-semi  text-white group-hover:text-[#37b767] ease-in-out transition">
                   Photography
                 </h1>
               </Link>
               <Link to={"/"} className="group">
-                <h1 className="text-lg font-semi  text-white group-hover:text-[#eb252a] ease-in-out transition">
+                <h1 className="text-lg font-semi  text-white group-hover:text-[#37b767] ease-in-out transition">
                   Videography
                 </h1>
               </Link>
               <Link to={"/"} className="group">
-                <h1 className="text-lg font-semi  text-white group-hover:text-[#eb252a] ease-in-out transition">
+                <h1 className="text-lg font-semi  text-white group-hover:text-[#37b767] ease-in-out transition">
                   Digital Marketing
                 </h1>
               </Link>
               <Link to={"/"} className="group">
-                <h1 className="text-lg font-semi  text-white group-hover:text-[#eb252a] ease-in-out transition">
+                <h1 className="text-lg font-semi  text-white group-hover:text-[#37b767] ease-in-out transition">
                   Live Streaming
                 </h1>
               </Link>
               <Link to={"/"} className="group">
-                <h1 className="text-lg font-semi  text-white group-hover:text-[#eb252a] ease-in-out transition">
+                <h1 className="text-lg font-semi  text-white group-hover:text-[#37b767] ease-in-out transition">
                   Creative Design
                 </h1>
               </Link>
               <Link to={"/"} className="group">
-                <h1 className="text-lg font-semi  text-white group-hover:text-[#eb252a] ease-in-out transition">
+                <h1 className="text-lg font-semi  text-white group-hover:text-[#37b767] ease-in-out transition">
                   Brand strategy
                 </h1>
               </Link>
@@ -96,42 +96,42 @@ export const Footer = () => {
 
           <div className="px-5 py-3">
             <div className="w-8/12 h-9/12">
-              <h1 className="text-2xl font-bold xs:text-[#eb252a] lg:text-white">Address</h1>
+              <h1 className="text-2xl font-bold xs:text-[#37b767] lg:text-white">Address</h1>
             </div>
 
             <div className="mt-12 flex flex-col gap-5">
               <div className="flex items-center justify-center gap-3">
                 <div to={"/"} className="w-9  h-9 ">
-                  <FaLocationDot className="w-5 h-5 text-[#eb252a]" />
+                  <FaLocationDot className="w-5 h-5 text-[#37b767]" />
                 </div>
 
                 <h1 className="text-white antialiased font-semibold">
-                  Plot 36, Sayuuni Complex, Ntinda-Kisaasi Road. Kampala,
+                  Plot 21, Kaduyu Lane, Kiwatule. Kampala,
                   Uganda.
                 </h1>
               </div>
 
               <div className="flex items-center justify-start gap-3">
                 <div to={"/"} className="w-9  h-9 ">
-                  <FaPhoneAlt className="w-5 h-5 text-[#eb252a]" />
+                  <FaPhoneAlt className="w-5 h-5 text-[#37b767]" />
                 </div>
                 <div className="flex flex-col">
                   <h1 className="text-white antialiased font-semibold">
-                    +256 771-899-794
+                    +256 779-021-140
                   </h1>
                   <h1 className="text-white antialiased font-semibold">
-                    +256 700-304-688
+                    +256 759-612-485
                   </h1>
                 </div>
               </div>
 
               <div className="flex items-start justify-start gap-3">
                 <div to={"/"} className="w-9  h-9 ">
-                  <MdEmail className="w-5 h-5 text-[#eb252a]" />
+                  <MdEmail className="w-5 h-5 text-[#37b767]" />
                 </div>
 
                 <h1 className="text-white antialiased font-semibold">
-                  info@switchmedia.ug
+                  info@deigntech.com
                 </h1>
               </div>
             </div>
@@ -140,7 +140,7 @@ export const Footer = () => {
 
         <div className="py-5 ">
           <h1 className="text-white text-xl font-semibold">
-            &#169; 2024 Switch Media Limited.
+            &#169; 2024 Deign Technologies Limited.
           </h1>
         </div>
       </div>
