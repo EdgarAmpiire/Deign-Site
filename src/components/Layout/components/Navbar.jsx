@@ -12,7 +12,7 @@ export const Navbar = () => {
 
   return (
     <div className="">
-      <div className=" w-full top-0 left-0 right-0 bg-transparent bg-white bg-opacity-80 backdrop-blur-[8px]  ">
+      <div className=" w-full top-0 left-0 right-0 bg-transparen bg-gray-100 bg-opacity-20 backdrop-blur-[8px]  ">
         {/* relative z-100 mx-12 py-3 w-full navbar navbar-expand-lg navbar-light */}
         <nav className="relative z-100 mx-1 navbar navbar-expand-lg navbar-light ">
           <div className="  flex items-center justify-between py-5 w-full">

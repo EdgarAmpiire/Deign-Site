@@ -8,7 +8,12 @@ export default {
   ], 
   
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'primary': '#37b767',
+        'secondary': '#042c3f',
+      },
+    },
   },
   darkMode: "class",
   plugins: [
