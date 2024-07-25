@@ -23,7 +23,7 @@ const Home = () => {
   return (
     <div className="flex items-center justify-center">
 
-<div className="2xl:max-w-[95vh] xl:items-center xl:justify-center">
+<div className="5xl:max-w-[95vh] 2xl:items-center 2xl:justify-center">
       {/* <div className="h-screen -z-10 top-0 left-0 w-full bg-[#010101] bg-opacity-70"> */}
         <div className="">
 
@@ -34,7 +34,7 @@ const Home = () => {
           muted
           className="object-cover absolute h-[100vh] w-screen -z-10 top-0 left-0 bg-opacity-8 bg-black"></video>
           </div>
-        <div className="h-[100vh] w-full flex items-start pl-12 justify-start pt-36 pb-10">
+        <div className="h-[100vh] w-full flex items-start l-12 justify-start pt-36 pb-10">
           <div className="text-start leading-tight xs:px-2 lg:px-0">
             <h1 className="text-[#37b767] text-8xl xs:text-4xl lg:text-5xl  font-bold lg:font-light tracking-[-0.075em]">
             Innovate Your
