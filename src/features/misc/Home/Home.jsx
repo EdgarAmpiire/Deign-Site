@@ -32,9 +32,9 @@ const Home = () => {
           loop
           autoPlay
           muted
-          className="object-cover absolute h-[105vh] w-screen -z-10 top-0 left-0 bg-opacity-8 bg-black"></video>
+          className="object-cover absolute h-[100vh] w-screen -z-10 top-0 left-0 bg-opacity-8 bg-black"></video>
           </div>
-        <div className="h-[105vh] w-full flex items-start mx-12 justify-start pt-40 pb-72">
+        <div className="h-[100vh] w-full flex items-start pl-12 justify-start pt-36 pb-10">
           <div className="text-start leading-tight xs:px-2 lg:px-0">
             <h1 className="text-[#37b767] text-8xl xs:text-4xl lg:text-5xl  font-bold lg:font-light tracking-[-0.075em]">
             Innovate Your
