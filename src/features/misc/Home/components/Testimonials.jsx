@@ -56,7 +56,7 @@ export const Testimonials = () => {
     <div
     className="flex bg-white lg:h-screen items-center justify-center overflow-hidden xs:py-8 xs:px-4 lg:px-0 lg:py-24 flex-col">
       <div
-      data-aos="fade-up" className="text-4xl font-bold text-[#eb252a]">Testimonials</div>
+      data-aos="fade-up" className="text-6xl tracking-[-0.075em] font-bold text-[#37b767]">Testimonials</div>
 
       <div
       data-aos="fade-up" className="xs:mt-12 lg:mt-0 flex items-center justify-center lg:gap-12 max-w-[1400px] lg:h-[450px] w-full py-5 ">
@@ -81,8 +81,8 @@ export const Testimonials = () => {
             <RiDoubleQuotesL className="h-16 w-16 text-[#444444]"/>
           </div>
           <div className="flex flex-col items-center justify-center">
-            <h1 className="text-2xl font-bold text-[#eb252a]">{`${slides[currentIndex].name}`}</h1>
-            <p className="text-xl text-center text-[#444444] tracking-[-.075em]  antialiased">{`${slides[currentIndex].title}`}, {`${slides[currentIndex].company}`}</p>
+            <h1 className="text-3xl font-bold text-[#37b767]">{`${slides[currentIndex].name}`}</h1>
+            <p className="text-xl font-bold text-center text-[#042c3f] tracking-[-.075em]  antialiased">{`${slides[currentIndex].title}`}, {`${slides[currentIndex].company}`}</p>
           </div>
         </div>
         </>
@@ -111,7 +111,7 @@ export const Testimonials = () => {
               <div
                 key={slideIndex}
                 onClick={() => goToSlide(slideIndex)}
-                className={`cursor-pointer transition duration-500 ease-in-out w-3 h-3  bg-[#eb252a] rounded-full ${
+                className={`cursor-pointer transition duration-500 ease-in-out w-3 h-3  bg-[#042c3f] rounded-full ${
                   currentIndex === slideIndex ? "p-2" : "bg-gray-400 scale-75  hover:scale-100"
                 } `}>
                 {/* <RxDotFilled className="text-4xl" /> */}

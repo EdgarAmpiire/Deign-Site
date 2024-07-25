@@ -25,7 +25,7 @@ import prau from "../../../../assets/images/prau.png";
 
 export const Clients = () => {
   return (
-    <div className="flex xs:flex-col lg:flex-row bg-black h-screen lg:items-center overflow-hidden xs:py-8 lg:py-32">
+    <div className="flex xs:flex-col lg:flex-row bg-[#042c3f] h-screen lg:items-center overflow-hidden xs:py-8 lg:py-32">
       <div className="lg:w-4/12  lg:h-full">
         <div className="flex flex-col xs:items-start lg:items-between xs:justify-start lg:justify-between lg:w-12/12 h-full xs:px-4 lg:px-24 ">
           <div>
@@ -33,14 +33,14 @@ export const Clients = () => {
               data-aos="fade-up"
               data-aos-easing="linear"
               data-aos-anchor-placement="bottom-bottom"
-              className="xs:text-4xl lg:text-4xl font-bold text-[#eb252a]">
+              className="xs:text-4xl text-6xl tracking-[-0.075em] lg:text-4xl font-bold text-[#37b767]">
               Our Clients
             </h1>
             <div
               data-aos="fade-up"
               data-aos-easing="linear"
               data-aos-anchor-placement="bottom-bottom"
-              className="p-1 w-3/12 mt-2 bg-[#444444]"></div>
+              className="p-1 w-3/12 mt-2 bg-[white]"></div>
           </div>
 
           <div
@@ -48,7 +48,7 @@ export const Clients = () => {
             data-aos-easing="linear"
             data-aos-anchor-placement="bottom-bottom"
             className="">
-            <h1 className="xs:hidden lg:flex text-7xl font-bold text-[#444444] tracking-[-.075em] font-outline-2  antialiased">
+            <h1 className="xs:hidden lg:flex text-7xl font-bold text-white tracking-[-.075em] font-outline-2  antialiased">
               Pleasure to work with
             </h1>
           </div>

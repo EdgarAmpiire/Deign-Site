@@ -63,17 +63,17 @@ export const Contact = () => {
   }, 5000);
 
   return (
-    <div className=" flex bg-black lg:h-screen items-center justify-center xs:py-8 lg:py-28">
+    <div className=" flex bg-[#042c3f] lg:h-screen items-center justify-center xs:py-8 lg:py-28">
       <div className="grid xs:grid-row-2 lg:grid-cols-2 gap-2 w-full xs:px-4 lg:px-24 h-full">
         <div className="flex flex-col items-start justify-start overflow-hidden">
           <div>
             <h1
-            data-aos="fade-up" className="xs:text-3xl lg:text-4xl font-bold text-[#eb252a]">
+            data-aos="fade-up" className="xs:text-3xl lg:text-4xl text-6xl tracking-[-0.075em] font-bold text-[#37b767]">
               Got A Project Or A Partnership In Mind?
             </h1>
 
             <p
-            data-aos="fade-up" className="text-2xl mt-8 font-bold text-[#444444] tracking-[-.075em] font-outline-2  antialiased">
+            data-aos="fade-up" className="text-2xl mt-8 font-bold text-[white] tracking-[-.075em] font-outline-2  antialiased">
               Top rated construction packages we pleasure rationally encounter
               consequences interesting who loves or pursue or desires
             </p>
@@ -100,7 +100,7 @@ export const Contact = () => {
             onSubmit={handleSubmit(onSubmit)}
             className="flex flex-col items-start justify-center xs:w-11/12 lg:w-10/12">
             <div className="w-full mt- flex flex-col">
-              <label htmlFor="" className="text-lg text-[#999999] mb-2">
+              <label htmlFor="" className="text-lg text-[white] mb-2">
                 Your Name{" "}
               </label>
               <input
@@ -119,7 +119,7 @@ export const Contact = () => {
             </div>
 
             <div className="w-full mt-8 flex flex-col">
-              <label htmlFor="" className="text-lg text-[#999999] mb-2">
+              <label htmlFor="" className="text-lg text-[white] mb-2">
                 Your Email{" "}
               </label>
 
@@ -158,7 +158,7 @@ export const Contact = () => {
               </div> */}
 
             <div className="w-full mt-8 flex flex-col">
-              <label htmlFor="" className="text-lg text-[#999999] mb-2">
+              <label htmlFor="" className="text-lg text-[white] mb-2">
                 How can we help you?{" "}
               </label>
 
@@ -179,7 +179,7 @@ export const Contact = () => {
               <button
               data-aos="fade-up"
                 type="submit"
-                className="text-[#999999] font-semibold hover:text-white w-fit py-3 px-7 border-[#eb252a] border-2 hover:border-transparent transition duration-500 ease-in-out hover:bg-[#eb252a] rounded-md">
+                className="text-[white] font-semibold hover:text-white w-fit py-3 px-7 border-[#37b767] border-2 hover:border-transparent transition duration-500 ease-in-out hover:bg-[#37b767] rounded-md">
                 <span className=" text-xl ">Send </span>
                 {/* <span className="button-icon fa fa-send"></span> */}
               </button>
