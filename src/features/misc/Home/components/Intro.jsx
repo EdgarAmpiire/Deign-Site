@@ -32,11 +32,11 @@ export const Intro = () => {
             </h1>
           </div>
           <div>
-            <p className="text-[#444444] font-semibold leading-8 text-lg mb-10">
+            <p className="text-[#042c3f] font-semibold leading-8 text-2xl mb-10">
             Welcome to Deign Technologies Limited! We are your dedicated partner in navigating the digital landscape, providing tailored IT solutions, robust digital marketing, and innovative web development services that drive business success.
             </p>
 
-            <p className="text-[#444444] font-semibold leading-8 text-lg mb-10">
+            <p className="text-[#042c3f] font-semibold leading-8 text-2xl mb-10">
             At Deign Technologies, we combine technical expertise with creative vision to deliver bespoke digital solutions. Our team of skilled professionals is committed to transforming your ideas into impactful digital experiences.</p>
           </div>
           {/* <div>
