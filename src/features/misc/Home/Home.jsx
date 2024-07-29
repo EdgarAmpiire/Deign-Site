@@ -36,13 +36,13 @@ const Home = () => {
           </div>
         <div className="h-[100vh] w-full flex items-start pl-20 2xl:pl-20 justify-start pt-40 pb-10">
           <div className="text-start leading-tight xs:px-2 lg:px-0">
-            <h1 className="text-[#37b767] text-8xl xs:text-4xl lg:text-5xl  font-bold lg:font-light tracking-[-0.075em]">
+            <h1 className="text-[#37b767] text-8xl xs:text-4xl lg:text-5xl 2xl:-mt-10 font-bold lg:font-light tracking-[-0.075em]">
             Innovate Your
             </h1>
             <h1 className="text-[#37b767] text-8xl xs:text-4xl lg:text-5xl  font-bold lg:font-light tracking-[-0.075em]">
             Digital Future
             </h1>
-            <h1 className="text-white text-4xl xs:text-4xl lg:text-5xl xs:mt-5 font-normal lg:font-light tracking-tight">
+            <h1 className="text-white text-4xl xs:text-4xl lg:text-5xl xs:mt-5 font-normal 2xl:mt-8 lg:font-light tracking-tight">
             Elevating businesses with cutting-edge IT solutions, <br /> exceptional web design, and powerful digital strategies.
             </h1>
 
