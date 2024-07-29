@@ -4,8 +4,9 @@ import { IoCameraOutline } from "react-icons/io5";
 import { IoVideocamOutline } from "react-icons/io5";
 import { Link } from "react-router-dom";
 import { RiVidiconLine } from "react-icons/ri";
-import { PiStrategy } from "react-icons/pi";
+// import { PiStrategy } from "react-icons/pi";
 import { MdOutlineEventAvailable } from "react-icons/md";
+import { HiOutlineSpeakerphone } from "react-icons/hi";
 // import pictures from "../../../../assets/videos/picvid.mp4";
 // import photo1 from "../../../../assets/images/photo1.jpg";
 import photo2 from "../../../../assets/images/photo2.jpg";
@@ -74,19 +75,19 @@ export const Services = () => {
             <div
         data-aos="fade-up"
             
-            className="group overflow-hidden h-fit  bg-black border-2 border-[#333333]  rounded-xl hover:shadow-2xl  hover:shadow-[#eb252a]/20 hover:-translate-y-2 transition duration-500 ease-in-out">
+            className="group overflow-hidden h-fit  bg-black border-2 border-[#333333]  rounded-xl hover:shadow-2xl  hover:shadow-[#37b767]/20 hover:-translate-y-2 transition duration-500 ease-in-out">
               <div
                 style={{ backgroundImage: `url(${photo2})` }}
                 className="bg-cover bg-center group">
                 <div className="group py-8 px-6 group-hover:backdrop-blur-m xs:bg-[#050505] xs:bg-opacity-80  lg:bg-[#050505] hover:bg-opacity-90 ease-in-out transition duration-500 ">
                   <div className="flex items-center justify-between">
-                    <div className=" group bg-transparent group-hover:bg-[#eb252a] w-20 h-20 p-5 flex items-center justify-center rounded-2xl ">
-                      <IoCameraOutline className="w-full h-full text-[#eb252a] group group-hover:text-white transition-all duration-300 ease-in-out" />
+                    <div className=" group bg-transparent group-hover:bg-[#37b767] w-20 h-20 p-5 flex items-center justify-center rounded-2xl ">
+                      <IoCameraOutline className="w-full h-full text-[#37b767] group group-hover:text-white transition-all duration-300 ease-in-out" />
                     </div>
                   </div>
                   <div className="mt-5">
-                    <h1 className="text-3xl font-bold text-[#eb252a] tracking-[-.075em] font-outline-2  antialiased">
-                      Photography
+                    <h1 className="text-3xl font-bold text-[#37b767] tracking-[-.075em] font-outline-2  antialiased">
+                      Web Development
                     </h1>
                     <p className="mt-3 text-white font-outline-2 font-semibold text-sm  antialiased">
                       Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -94,7 +95,7 @@ export const Services = () => {
                     </p>
                   </div>
                   <Link to="/photography">
-                    <div className="flex items-center mt-5 mr-0 w-fit gap-0 text-[#fefefe] text-opacity-0 hover:text-[#eb252a] hover:gap-3 ease-in duration-150   ">
+                    <div className="flex items-center mt-5 mr-0 w-fit gap-0 text-[#fefefe] text-opacity-0 hover:text-[#37b767] hover:gap-3 ease-in duration-150   ">
                       <p className=" pr-0 text-white font-medium">
                         See our work
                       </p>
@@ -110,19 +111,19 @@ export const Services = () => {
             <div
         data-aos="fade-up"
             
-            className="group overflow-hidden h-fit  bg-black border-2 border-[#333333]  rounded-xl hover:shadow-2xl  hover:shadow-[#eb252a]/20 hover:-translate-y-2 transition duration-500 ease-in-out">
+            className="group overflow-hidden h-fit  bg-black border-2 border-[#333333]  rounded-xl hover:shadow-2xl  hover:shadow-[#37b767]/20 hover:-translate-y-2 transition duration-500 ease-in-out">
               <div
                 style={{ backgroundImage: `url(${video2})` }}
                 className="bg-cover bg-center group">
                 <div className="group py-8 px-6 group-hover:backdrop-blur-m xs:bg-[#050505] xs:bg-opacity-80 bg-[#050505] hover:bg-opacity-90 ease-in-out transition duration-500 ">
                  <div className="flex items-center justify-between">
-                <div className=" group bg-transparent group-hover:bg-[#eb252a] w-20 h-20 p-5 flex items-center justify-center rounded-2xl ">
-                  <IoVideocamOutline className="w-full h-full text-[#eb252a] group group-hover:text-white transition-all duration-300 ease-in-out" />
+                <div className=" group bg-transparent group-hover:bg-[#37b767] w-20 h-20 p-5 flex items-center justify-center rounded-2xl ">
+                  <IoVideocamOutline className="w-full h-full text-[#37b767] group group-hover:text-white transition-all duration-300 ease-in-out" />
                 </div>
               </div>
               <div className="mt-5">
-                <h1 className="text-3xl font-bold text-[#eb252a] tracking-[-.075em] font-outline-2  antialiased">
-                  Videography
+                <h1 className="text-3xl font-bold text-[#37b767] tracking-[-.075em] font-outline-2  antialiased">
+                  Software Development
                 </h1>
                 <p className="mt-3 text-white font-outline-2 font-semibold text-sm  antialiased">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
@@ -130,7 +131,7 @@ export const Services = () => {
                 </p>
               </div>
               <Link to="/">
-                <div className="flex items-center mt-5 mr-0 w-fit gap-0 text-[#fefefe] text-opacity-0 hover:text-[#eb252a] hover:gap-3 ease-in duration-150   ">
+                <div className="flex items-center mt-5 mr-0 w-fit gap-0 text-[#fefefe] text-opacity-0 hover:text-[#37b767] hover:gap-3 ease-in duration-150   ">
                   <p className=" pr-0 text-white font-medium">See our work</p>
                   <span className="">
                     <BsFillArrowRightCircleFill className="text-2xl " />
@@ -144,19 +145,19 @@ export const Services = () => {
             <div
         data-aos="fade-up"
             
-            className="group overflow-hidden h-fit  bg-black border-2 border-[#333333]  rounded-xl hover:shadow-2xl  hover:shadow-[#eb252a]/20 hover:-translate-y-2 transition duration-500 ease-in-out">
+            className="group overflow-hidden h-fit  bg-black border-2 border-[#333333]  rounded-xl hover:shadow-2xl  hover:shadow-[#37b767]/20 hover:-translate-y-2 transition duration-500 ease-in-out">
               <div
                 style={{ backgroundImage: `url(${video1})` }}
                 className="bg-cover bg-center group">
                 <div className="group py-8 px-6 group-hover:backdrop-blur-m xs:bg-[#050505] xs:bg-opacity-80 bg-[#050505] hover:bg-opacity-90 ease-in-out transition duration-500 ">
                   <div className="flex items-center justify-between">
-                <div className=" group bg-transparent group-hover:bg-[#eb252a] w-20 h-20 p-5 flex items-center justify-center rounded-2xl ">
-                  <RiVidiconLine className="w-full h-full text-[#eb252a] group group-hover:text-white transition-all duration-300 ease-in-out" />
+                <div className=" group bg-transparent group-hover:bg-[#37b767] w-20 h-20 p-5 flex items-center justify-center rounded-2xl ">
+                  <RiVidiconLine className="w-full h-full text-[#37b767] group group-hover:text-white transition-all duration-300 ease-in-out" />
                 </div>
               </div>
               <div className="mt-5">
-                <h1 className="text-3xl font-bold text-[#eb252a] tracking-[-.075em] font-outline-2  antialiased">
-                  Live Streaming
+                <h1 className="text-3xl font-bold text-[#37b767] tracking-[-.075em] font-outline-2  antialiased">
+                  IT Procurement
                 </h1>
                 <p className="mt-3 text-white font-outline-2 font-semibold text-sm  antialiased">
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit.
@@ -165,7 +166,7 @@ export const Services = () => {
                 </p>
               </div>
               <Link to="/">
-                <div className="flex items-center mt-5 mr-0 w-fit gap-0 text-[#fefefe] text-opacity-0 hover:text-[#eb252a] hover:gap-3 ease-in duration-150   ">
+                <div className="flex items-center mt-5 mr-0 w-fit gap-0 text-[#fefefe] text-opacity-0 hover:text-[#37b767] hover:gap-3 ease-in duration-150   ">
                   <p className=" pr-0 text-white font-medium">See our work</p>
                   <span className="">
                     <BsFillArrowRightCircleFill className="text-2xl " />
@@ -179,19 +180,20 @@ export const Services = () => {
             <div
         data-aos="fade-up"
             
-            className="group overflow-hidden h-fit  bg-black border-2 border-[#333333]  rounded-xl hover:shadow-2xl  hover:shadow-[#eb252a]/20 hover:-translate-y-2 transition duration-500 ease-in-out">
+            className="group overflow-hidden h-fit  bg-black border-2 border-[#333333]  rounded-xl hover:shadow-2xl  hover:shadow-[#37b767]/20 hover:-translate-y-2 transition duration-500 ease-in-out">
               <div
                 style={{ backgroundImage: `url(${events})` }}
                 className="bg-cover bg-center group">
                 <div className="group py-8 px-6 group-hover:backdrop-blur-m xs:bg-[#050505] xs:bg-opacity-80 bg-[#050505] hover:bg-opacity-90 ease-in-out transition duration-500 ">
                  <div className="flex items-center justify-between">
-                <div className=" group bg-transparent group-hover:bg-[#eb252a] w-20 h-20 p-5 flex items-center justify-center rounded-2xl ">
-                  <MdOutlineEventAvailable className="w-full h-full text-[#eb252a] group group-hover:text-white transition-all duration-300 ease-in-out" />
+                <div className=" group bg-transparent group-hover:bg-[#37b767] w-20 h-20 p-5 flex items-center justify-center rounded-2xl ">
+                  <MdOutlineEventAvailable className="w-full h-full text-[#37b767] group group-hover:text-white transition-all duration-300 ease-in-out" />
                 </div>
               </div>
               <div className="mt-5">
-                <h1 className="text-3xl font-bold text-[#eb252a] tracking-[-.075em] font-outline-2  antialiased">
-                  Events
+                <h1 className="text-3xl font-bold text-[#37b767] tracking-[-.075em] font-outline-2  antialiased">
+                Networking Services
+
                 </h1>
                 <p className="mt-3 text-white font-outline-2 font-semibold text-sm  antialiased">
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -199,7 +201,7 @@ export const Services = () => {
                 </p>
               </div>
               <Link to="/">
-                <div className="flex items-center mt-5 mr-0 w-fit gap-0 text-[#fefefe] text-opacity-0 hover:text-[#eb252a] hover:gap-3 ease-in duration-150   ">
+                <div className="flex items-center mt-5 mr-0 w-fit gap-0 text-[#fefefe] text-opacity-0 hover:text-[#37b767] hover:gap-3 ease-in duration-150   ">
                   <p className=" pr-0 text-white font-medium">See our work</p>
                   <span className="">
                     <BsFillArrowRightCircleFill className="text-2xl " />
@@ -213,19 +215,53 @@ export const Services = () => {
             <div
         data-aos="fade-up"
             
-            className="group overflow-hidden h-fit  bg-black border-2 border-[#333333]  rounded-xl hover:shadow-2xl  hover:shadow-[#eb252a]/20 hover:-translate-y-2 transition duration-500 ease-in-out">
+            className="group overflow-hidden h-fit  bg-black border-2 border-[#333333]  rounded-xl hover:shadow-2xl  hover:shadow-[#37b767]/20 hover:-translate-y-2 transition duration-500 ease-in-out">
+              <div
+                style={{ backgroundImage: `url(${events})` }}
+                className="bg-cover bg-center group">
+                <div className="group py-8 px-6 group-hover:backdrop-blur-m xs:bg-[#050505] xs:bg-opacity-80 bg-[#050505] hover:bg-opacity-90 ease-in-out transition duration-500 ">
+                 <div className="flex items-center justify-between">
+                <div className=" group bg-transparent group-hover:bg-[#37b767] w-20 h-20 p-5 flex items-center justify-center rounded-2xl ">
+                  <MdOutlineEventAvailable className="w-full h-full text-[#37b767] group group-hover:text-white transition-all duration-300 ease-in-out" />
+                </div>
+              </div>
+              <div className="mt-5">
+                <h1 className="text-3xl font-bold text-[#37b767] tracking-[-.075em] font-outline-2  antialiased">
+                  Graphics Design
+                </h1>
+                <p className="mt-3 text-white font-outline-2 font-semibold text-sm  antialiased">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Eligendi, itaque cumque? Nostrum repellendus consequuntur in.
+                </p>
+              </div>
+              <Link to="/">
+                <div className="flex items-center mt-5 mr-0 w-fit gap-0 text-[#fefefe] text-opacity-0 hover:text-[#37b767] hover:gap-3 ease-in duration-150   ">
+                  <p className=" pr-0 text-white font-medium">See our work</p>
+                  <span className="">
+                    <BsFillArrowRightCircleFill className="text-2xl " />
+                  </span>
+                </div>
+              </Link>
+            </div>
+            </div>
+            </div>
+
+            <div
+        data-aos="fade-up"
+            
+            className="group overflow-hidden h-fit  bg-black border-2 border-[#333333]  rounded-xl hover:shadow-2xl  hover:shadow-[#37b767]/20 hover:-translate-y-2 transition duration-500 ease-in-out">
               <div
                 style={{ backgroundImage: `url(${brand})` }}
                 className="bg-cover bg-center group">
                 <div className="group py-8 px-6 group-hover:backdrop-blur-m xs:bg-[#050505] xs:bg-opacity-80 bg-[#050505] hover:bg-opacity-90 ease-in-out transition duration-500 ">
                   <div className="flex items-center justify-between">
-                <div className=" group bg-transparent group-hover:bg-[#eb252a] w-20 h-20 p-5 flex items-center justify-center rounded-2xl ">
-                  <PiStrategy className="w-full h-full text-[#eb252a] group group-hover:text-white transition-all duration-300 ease-in-out" />
+                <div className=" group bg-transparent group-hover:bg-[#37b767] w-20 h-20 p-5 flex items-center justify-center rounded-2xl ">
+                  <HiOutlineSpeakerphone className="w-full h-full text-[#37b767] group group-hover:text-white transition-all duration-300 ease-in-out" />
                 </div>
               </div>
               <div className="mt-5">
-                <h1 className="text-3xl font-bold text-[#eb252a] tracking-[-.075em] font-outline-2  antialiased">
-                  Brand Strategy
+                <h1 className="text-3xl font-bold text-[#37b767] tracking-[-.075em] font-outline-2  antialiased">
+                  Digital Marketing
                 </h1>
                 <p className="mt-3 text-white font-outline-2 font-semibold text-sm  antialiased">
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -233,7 +269,7 @@ export const Services = () => {
                 </p>
               </div>
               <Link to="/">
-                <div className="flex items-center mt-5 mr-0 w-fit gap-0 text-[#fefefe] text-opacity-0 hover:text-[#eb252a] hover:gap-3 ease-in duration-150   ">
+                <div className="flex items-center mt-5 mr-0 w-fit gap-0 text-[#fefefe] text-opacity-0 hover:text-[#37b767] hover:gap-3 ease-in duration-150   ">
                   <p className=" pr-0 text-white font-medium">See our work</p>
                   <span className="">
                     <BsFillArrowRightCircleFill className="text-2xl " />
