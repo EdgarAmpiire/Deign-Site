@@ -10,7 +10,7 @@ export const Intro = () => {
       <div className="flex xs:flex-col lg:flex-row items-center justify-center lg:h-screen w-full ">
         <div
         data-aos="fade-up"
-         className="flex items-center justify-center lg:w-6/12 lg:px-36 xs:px-4  ">
+         className="flex items-center justify-center lg:w-6/12 lg:pl-24 xs:px-4  ">
           {/* <img src={bgImage} alt="" className="object-cover lg:w-7/12 lg:h-7/12 " /> */}
           <div className="">
 

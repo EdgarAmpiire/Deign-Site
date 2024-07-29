@@ -20,7 +20,7 @@ export const Footer = () => {
       <div className=" grid lg:grid-cols-1 divide-y divide-gray-500 h-full w-full bg-[#010101]/40 backdrop-blur-[40px] items-center justify-center xs:px-4 lg:px-[97px]">
         <div
           data-aos="fade-right"
-          className="w-12/12 my-10 grid xs:grid-row-3 lg:grid-cols-3 xs:gap-5 lg:gap-10 2xl:mx-[30rem]">
+          className="w-12/12 my-10 grid xs:grid-row-3 lg:grid-cols-3 xs:gap-5 lg:gap-10 5xl:mx-[30rem]">
           <div className="px-5 py-3">
             <div className="xs:w-9/12 xs:h-10/12 lg:w-8/12 lg:h-9/12">
               <img src={logo} alt="" />
