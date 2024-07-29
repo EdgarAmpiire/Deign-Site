@@ -1,5 +1,5 @@
 import videography from "../../../assets/videos/footer.mp4";
-import logo from "../../../assets/images/deign.png";
+import logo from "../../../assets/images/Deign-blue.png";
 import { FaFacebookF } from "react-icons/fa6";
 import { FaInstagram, FaWhatsapp } from "react-icons/fa";
 import { MdOutlineMailOutline, MdEmail } from "react-icons/md";
@@ -63,32 +63,32 @@ export const Footer = () => {
             <div className="mt-12 flex flex-col gap-1">
               <Link to={"/"} className="group">
                 <h1 className="text-lg font-semi  text-white group-hover:text-[#37b767] ease-in-out transition">
-                  Photography
+                Web Development
                 </h1>
               </Link>
               <Link to={"/"} className="group">
                 <h1 className="text-lg font-semi  text-white group-hover:text-[#37b767] ease-in-out transition">
-                  Videography
+                Software Development
                 </h1>
               </Link>
               <Link to={"/"} className="group">
                 <h1 className="text-lg font-semi  text-white group-hover:text-[#37b767] ease-in-out transition">
-                  Digital Marketing
+                IT Procurement
                 </h1>
               </Link>
               <Link to={"/"} className="group">
                 <h1 className="text-lg font-semi  text-white group-hover:text-[#37b767] ease-in-out transition">
-                  Live Streaming
+                Networking Services
                 </h1>
               </Link>
               <Link to={"/"} className="group">
                 <h1 className="text-lg font-semi  text-white group-hover:text-[#37b767] ease-in-out transition">
-                  Creative Design
+                Graphics Design
                 </h1>
               </Link>
               <Link to={"/"} className="group">
                 <h1 className="text-lg font-semi  text-white group-hover:text-[#37b767] ease-in-out transition">
-                  Brand strategy
+                Digital Marketing
                 </h1>
               </Link>
             </div>
