@@ -1,6 +1,6 @@
 // import { useState } from "react";
 import PropTypes from "prop-types";
-import logo from "../../../assets/images/deign.png";
+import logo from "../../../assets/images/Deign-blue.png";
 import { Link } from "react-router-dom";
 // import { RiCustomerService2Fill } from "react-icons/ri";
 // import { LuMenu } from "react-icons/lu";
@@ -25,7 +25,7 @@ export const Navbar = () => {
                     <img
                       src={logo}
                       alt="logo"
-                      className="object-contain md:h-16 md:w-96"
+                      className="object-contain md:h-24 md:w-96"
                     />
                   </div>
                 </Link>
