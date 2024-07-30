@@ -6,15 +6,15 @@ import { Link } from "react-router-dom";
 import { RiVidiconLine } from "react-icons/ri";
 // import { PiStrategy } from "react-icons/pi";
 import { MdOutlineEventAvailable } from "react-icons/md";
-import { HiOutlineSpeakerphone } from "react-icons/hi";
+// import { HiOutlineSpeakerphone } from "react-icons/hi";
 // import pictures from "../../../../assets/videos/picvid.mp4";
 // import photo1 from "../../../../assets/images/photo1.jpg";
 // import photo2 from "../../../../assets/images/photo2.jpg";
 // import photo3 from "../../../../assets/images/photo3.jpg";
-import brand from "../../../../assets/images/brand.jpg";
+import video4 from "../../../../assets/images/Designcommunity.png";
 import video1 from "../../../../assets/images/Development-cuate.png";
 import video2 from "../../../../assets/images/Softwareengineer.png";
-import events from "../../../../assets/images/events.jpg";
+import video3 from "../../../../assets/images/Digitaltools.png";
 
 export const Services = () => {
   // const items = [
@@ -151,7 +151,7 @@ export const Services = () => {
               data-aos="fade-up"
               className="group overflow-hidden h-fit  bg-black border-2 border-[#333333]  rounded-xl hover:shadow-2xl  hover:shadow-[#37b767]/20 hover:-translate-y-2 transition duration-500 ease-in-out">
               <div
-                style={{ backgroundImage: `url(${events})` }}
+                style={{ backgroundImage: `url(${video3})` }}
                 className="bg-cover bg-center group">
                 <div className="group py-8 px-6 group-hover:backdrop-blur-m xs:bg-[#050505] xs:bg-opacity-80 bg-[#050505] hover:bg-opacity-90 ease-in-out transition duration-500 ">
                   <div className="flex items-center justify-between">
@@ -185,71 +185,40 @@ export const Services = () => {
 
             <div
               data-aos="fade-up"
-              className="group overflow-hidden h-fit  bg-black border-2 border-[#333333]  rounded-xl hover:shadow-2xl  hover:shadow-[#37b767]/20 hover:-translate-y-2 transition duration-500 ease-in-out">
+              className="group overflow-hidden h-92 hover:cursor-pointer bg-blac border-2 border-[#333333]  rounded-xl hover:shadow-2  hover:shadow-[#37b76 hover:-translate-y-2 transition duration-500 ease-in-out">
               <div
-                style={{ backgroundImage: `url(${events})` }}
-                className="bg-cover bg-center group">
-                <div className="group py-8 px-6 group-hover:backdrop-blur-m xs:bg-[#050505] xs:bg-opacity-80 bg-[#050505] hover:bg-opacity-90 ease-in-out transition duration-500 ">
-                  <div className="flex items-center justify-between">
-                    <div className=" group bg-transparent group-hover:bg-[#37b767] w-20 h-20 p-5 flex items-center justify-center rounded-2xl ">
-                      <MdOutlineEventAvailable className="w-full h-full text-[#37b767] group group-hover:text-white transition-all duration-300 ease-in-out" />
-                    </div>
-                  </div>
-                  <div className="mt-5">
-                    <h1 className="text-3xl font-bold text-[#37b767] tracking-[-.075em] font-outline-2  antialiased">
+                style={{ backgroundImage: `url(${video4})` }}
+                className="bg-cover bg-center group h-full flex flex-col justify-end">
+                <div className=" group py-8 px-6 roup-hover:backdrop-blur-m xs:bg-[#05050] xs:bg-opacity-10  lg:bg-[#050505]/70 hover:bg-opacity-40 ease-in-out transition duration-500 ">
+                  <div className="">
+                    <h1 className=" text-3xl font-bold text-[#37b767] tracking-[-.075em] font-outline-2  antialiased">
                       Graphics Design
                     </h1>
-                    <p className="mt-3 text-white font-outline-2 font-semibold text-sm  antialiased">
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                      Eligendi, itaque cumque? Nostrum repellendus consequuntur
-                      in.
-                    </p>
+                    {/* <p className="mt-3 text-white font-outline-2 font-semibold text-sm  antialiased">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Totam, ea excepturi! Voluptate quos commodi similique.
+                    </p> */}
                   </div>
-                  <Link to="/">
-                    <div className="flex items-center mt-5 mr-0 w-fit gap-0 text-[#fefefe] text-opacity-0 hover:text-[#37b767] hover:gap-3 ease-in duration-150   ">
-                      <p className=" pr-0 text-white font-medium">
-                        See our work
-                      </p>
-                      <span className="">
-                        <BsFillArrowRightCircleFill className="text-2xl " />
-                      </span>
-                    </div>
-                  </Link>
                 </div>
               </div>
             </div>
 
             <div
               data-aos="fade-up"
-              className="group overflow-hidden h-fit  bg-black border-2 border-[#333333]  rounded-xl hover:shadow-2xl  hover:shadow-[#37b767]/20 hover:-translate-y-2 transition duration-500 ease-in-out">
+              className="group overflow-hidden h-92 hover:cursor-pointer bg-blac border-2 border-[#333333]  rounded-xl hover:shadow-2  hover:shadow-[#37b76 hover:-translate-y-2 transition duration-500 ease-in-out">
               <div
-                style={{ backgroundImage: `url(${brand})` }}
-                className="bg-cover bg-center group">
-                <div className="group py-8 px-6 group-hover:backdrop-blur-m xs:bg-[#050505] xs:bg-opacity-80 bg-[#050505] hover:bg-opacity-90 ease-in-out transition duration-500 ">
-                  <div className="flex items-center justify-between">
-                    <div className=" group bg-transparent group-hover:bg-[#37b767] w-20 h-20 p-5 flex items-center justify-center rounded-2xl ">
-                      <HiOutlineSpeakerphone className="w-full h-full text-[#37b767] group group-hover:text-white transition-all duration-300 ease-in-out" />
-                    </div>
-                  </div>
-                  <div className="mt-5">
-                    <h1 className="text-3xl font-bold text-[#37b767] tracking-[-.075em] font-outline-2  antialiased">
+                style={{ backgroundImage: `url(${video3})` }}
+                className="bg-cover bg-center group h-full flex flex-col justify-end">
+                <div className=" group py-8 px-6 roup-hover:backdrop-blur-m xs:bg-[#05050] xs:bg-opacity-10  lg:bg-[#050505]/70 hover:bg-opacity-40 ease-in-out transition duration-500 ">
+                  <div className="">
+                    <h1 className=" text-3xl font-bold text-[#37b767] tracking-[-.075em] font-outline-2  antialiased">
                       Digital Marketing
                     </h1>
-                    <p className="mt-3 text-white font-outline-2 font-semibold text-sm  antialiased">
-                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                      Autem similique repellendus corporis velit neque delectus.
-                    </p>
+                    {/* <p className="mt-3 text-white font-outline-2 font-semibold text-sm  antialiased">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Totam, ea excepturi! Voluptate quos commodi similique.
+                    </p> */}
                   </div>
-                  <Link to="/">
-                    <div className="flex items-center mt-5 mr-0 w-fit gap-0 text-[#fefefe] text-opacity-0 hover:text-[#37b767] hover:gap-3 ease-in duration-150   ">
-                      <p className=" pr-0 text-white font-medium">
-                        See our work
-                      </p>
-                      <span className="">
-                        <BsFillArrowRightCircleFill className="text-2xl " />
-                      </span>
-                    </div>
-                  </Link>
                 </div>
               </div>
             </div>
