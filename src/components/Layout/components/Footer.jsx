@@ -33,25 +33,31 @@ export const Footer = () => {
               </p>
             </div>
             <div className="flex gap-3 mt-10">
-              <Link
+              <div
                 to={"/"}
                 className="w-9  h-9 py-2 px-2 flex items-center justify-center bg-transparen bg-gray-700 bg-opacity-30 backdrop-blur-[8px] rounded-md hover:bg-[#37b767] ease-in-out duration-300 transition">
                 <FaFacebookF className="w-5 h-5 text-white" />
-              </Link>
-              <Link
-                to={"/"}
+              </div>
+              <div
                 className="w-9  h-9 py-2 px-2 flex items-center justify-center bg-transparen bg-gray-700 bg-opacity-30 backdrop-blur-[8px] rounded-md hover:bg-[#37b767] ease-in-out duration-300 transition">
+                <a href="https://www.instagram.com/deign.tech?igsh=bnY2bWZqYTRtdnBm&utm_source=qr" target="_blank" rel="noreferrer">
                 <FaInstagram className="w-5 h-5 text-white" />
-              </Link>
-              <Link
-                to={"/"}
+              </a>
+              </div>
+              <div
+               
+                  // ?text=Welcome%20to%20Deign%20Technologies%20Limited.%20How%20can%20we%20help%20you%20today?
+                  
                 className="w-9  h-9 py-2 px-2 flex items-center justify-center bg-transparen bg-gray-700 bg-opacity-30 backdrop-blur-[8px] rounded-md hover:bg-[#37b767] ease-in-out duration-300 transition">
+                 <a href="https://wa.me/+256759612485" target="_blank" rel="noreferrer">
                 <FaWhatsapp className="w-5 h-5 text-white" />
-              </Link>
+              </a>
+              </div>
               <Link
-                to={"/"}
                 className="w-9  h-9 py-2 px-2 flex items-center justify-center bg-transparen bg-gray-700 bg-opacity-30 backdrop-blur-[8px] rounded-md hover:bg-[#37b767] ease-in-out duration-300 transition">
+                 <a href="mailto:deigntechnologieslimited@gmail.com" target="_blank" rel="noreferrer">
                 <MdOutlineMailOutline className="w-5 h-5 text-white" />
+              </a>
               </Link>
             </div>
           </div>
