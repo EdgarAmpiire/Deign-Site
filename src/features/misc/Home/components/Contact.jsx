@@ -68,34 +68,44 @@ export const Contact = () => {
         <div className="flex flex-col items-start justify-start overflow-hidden">
           <div>
             <h1
-            data-aos="fade-up" className="xs:text-3xl lg:text-4xl text-6xl tracking-[-0.075em] font-bold text-[#37b767]">
+              data-aos="fade-up"
+              className="xs:text-3xl lg:text-4xl text-6xl tracking-[-0.075em] font-bold text-[#37b767]">
               Got A Project Or A Partnership In Mind?
             </h1>
 
             <p
-            data-aos="fade-up" className="text-2xl mt-8 font-bold text-[white] tracking-[-.075em] font-outline-2  antialiased">
+              data-aos="fade-up"
+              className="text-2xl mt-8 font-bold text-[white] tracking-[-.075em] font-outline-2  antialiased">
               Top rated construction packages we pleasure rationally encounter
               consequences interesting who loves or pursue or desires
             </p>
           </div>
 
-          <div
-          data-aos="fade-up" className="py-5 h-fit xs:mt-4 lg:mt-0">
+          <div data-aos="fade-up" className="py-5 h-fit xs:mt-4 lg:mt-0 ">
+            {/* <iframe */}
+            {/* src=" */}
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.7402869033267!2d32.60882417463312!3d0.3583456639610723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177dbbf1a7f1ccff%3A0x30fbefa381782b6c!2sSwitch%20Media!5e0!3m2!1sen!2sug!4v1709728810771!5m2!1sen!2sug"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7979.4760835895495!2d32.6216582398373!3d0.36346412719137194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5d7d15b85a33d5%3A0x84b5ebd2ca8b8ec4!2sDeign%20Technologies%20Limited!5e0!3m2!1sen!2sug!4v1722946280182!5m2!1sen!2sug"
               width="600"
-              height="280"
+              height="450"
               style={{border:"0"}}
               allowfullscreen=""
               loading="lazy"
-            //   referrerpolicy="no-referrer-when-downgrade"
+              // referrerpolicy="no-referrer-when-downgrade"
               ></iframe>
+            {/* width="600"
+              height="320"
+              style={{border:"0"}}
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              ></iframe> */}
           </div>
         </div>
 
         <div className="flex items-start justify-center xs:mt-5 lg:mt-0">
           <form
-          data-aos="fade-up"
+            data-aos="fade-up"
             action=""
             onSubmit={handleSubmit(onSubmit)}
             className="flex flex-col items-start justify-center xs:w-11/12 lg:w-10/12">
@@ -177,7 +187,7 @@ export const Contact = () => {
 
             <div className="mt-6">
               <button
-              data-aos="fade-up"
+                data-aos="fade-up"
                 type="submit"
                 className="text-[white] font-semibold hover:text-white w-fit py-3 px-7 border-[#37b767] border-2 hover:border-transparent transition duration-500 ease-in-out hover:bg-[#37b767] rounded-md">
                 <span className=" text-xl ">Send </span>

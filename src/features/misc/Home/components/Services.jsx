@@ -31,7 +31,7 @@ export const Services = () => {
           <>
             <div
               data-aos="fade-up"
-              className="group overflow-hidden h-[50vh] hover:cursor-pointer bg-blac border-2 border-[#333333]  rounded-xl hover:shadow-2  hover:shadow-[#37b76 hover:-translate-y-2 transition duration-500 ease-in-out">
+              className="group overflow-hidden h-[50vh] hover:cursor-pointer bg-blac border-2 border-[#333333] hover:border-[#37b767] rounded-xl hover:shadow-2  hover:shadow-[#37b76 hover:-translate-y-2 transition duration-500 ease-in-out">
               <div
                 style={{ backgroundImage: `url(${service1})` }}
                 className="bg-cover bg-center group h-full flex flex-col justify-end">
@@ -51,7 +51,7 @@ export const Services = () => {
 
             <div
               data-aos="fade-up"
-              className="group overflow-hidden h-[50vh] hover:cursor-pointer bg-blac border-2 border-[#333333]  rounded-xl hover:shadow-2  hover:shadow-[#37b76 hover:-translate-y-2 transition duration-500 ease-in-out">
+              className="group overflow-hidden h-[50vh] hover:cursor-pointer bg-blac border-2 border-[#333333] hover:border-[#37b767] rounded-xl hover:shadow-2  hover:shadow-[#37b76 hover:-translate-y-2 transition duration-500 ease-in-out">
               <div
                 style={{ backgroundImage: `url(${service2})` }}
                 className="bg-cover bg-center group h-full flex flex-col justify-end">
@@ -71,7 +71,7 @@ export const Services = () => {
 
             <div
               data-aos="fade-up"
-              className="group overflow-hidden h-[50vh] hover:cursor-pointer bg-blac border-2 border-[#333333]  rounded-xl hover:shadow-2  hover:shadow-[#37b76 hover:-translate-y-2 transition duration-500 ease-in-out">
+              className="group overflow-hidden h-[50vh] hover:cursor-pointer bg-blac border-2 border-[#333333] hover:border-[#37b767] rounded-xl hover:shadow-2  hover:shadow-[#37b76 hover:-translate-y-2 transition duration-500 ease-in-out">
               <div
                 style={{ backgroundImage: `url(${service6})` }}
                 className="bg-cover bg-center group h-full flex flex-col justify-end">
@@ -91,7 +91,7 @@ export const Services = () => {
  
             <div
               data-aos="fade-up"
-              className="group overflow-hidden h-[50vh] hover:cursor-pointer bg-blac border-2 border-[#333333]  rounded-xl hover:shadow-2  hover:shadow-[#37b76 hover:-translate-y-2 transition duration-500 ease-in-out">
+              className="group overflow-hidden h-[50vh] hover:cursor-pointer bg-blac border-2 border-[#333333] hover:border-[#37b767] rounded-xl hover:shadow-2  hover:shadow-[#37b76 hover:-translate-y-2 transition duration-500 ease-in-out">
               <div
                 style={{ backgroundImage: `url(${service5})` }}
                 className="bg-cover bg-center group h-full flex flex-col justify-end">
@@ -111,7 +111,7 @@ export const Services = () => {
 
             <div
               data-aos="fade-up"
-              className="group overflow-hidden h-[50vh] hover:cursor-pointer bg-blac border-2 border-[#333333]  rounded-xl hover:shadow-2  hover:shadow-[#37b76 hover:-translate-y-2 transition duration-500 ease-in-out">
+              className="group overflow-hidden h-[50vh] hover:cursor-pointer bg-blac border-2 border-[#333333] hover:border-[#37b767]  rounded-xl hover:shadow-2  hover:shadow-[#37b76 hover:-translate-y-2 transition duration-500 ease-in-out">
               <div
                 style={{ backgroundImage: `url(${service4})` }}
                 className="bg-cover bg-center group h-full flex flex-col justify-end">
@@ -131,7 +131,7 @@ export const Services = () => {
 
             <div
               data-aos="fade-up"
-              className="group overflow-hidden h-[50vh] hover:cursor-pointer bg-blac border-2 border-[#333333]  rounded-xl hover:shadow-2  hover:shadow-[#37b76 hover:-translate-y-2 transition duration-500 ease-in-out">
+              className="group overflow-hidden h-[50vh] hover:cursor-pointer bg-blac border-2 border-[#333333] hover:border-[#37b767] rounded-xl hover:shadow-2  hover:shadow-[#37b76 hover:-translate-y-2 transition duration-500 ease-in-out">
               <div
                 style={{ backgroundImage: `url(${service3})` }}
                 className="bg-cover bg-center group h-full flex flex-col justify-end">
