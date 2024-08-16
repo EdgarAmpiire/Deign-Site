@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { BsArrowRightShort, BsArrowLeftShort } from "react-icons/bs";
 import kevin from "../../../../assets/images/kevin.png";
-// import Sam from "../../../../assets/images/sam.jpg";
+import sam from "../../../../assets/images/sam.jpeg";
 import hope from "../../../../assets/images/hope.jpg";
 import { RiDoubleQuotesL } from "react-icons/ri";
 
@@ -33,7 +33,7 @@ export const Testimonials = () => {
       company: "Laten Media",
       comment:
         "Deign Technologies Limited has been an incredible partner for us. Their expertise in website development and digital marketing has significantly enhanced our online presence. They not only delivered a top-notch website but also provided excellent ongoing support. The team’s professionalism and commitment to quality make them stand out in the industry. I highly recommend their services to anyone looking to elevate their digital footprint.",
-        img: hope,
+        img: sam,
     },
   ];
 
