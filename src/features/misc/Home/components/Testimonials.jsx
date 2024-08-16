@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { BsArrowRightShort, BsArrowLeftShort } from "react-icons/bs";
-import Kevin from "../../../../assets/images/kevin.jpg";
-import Sam from "../../../../assets/images/sam.jpg";
+// import Kevin from "../../../../assets/images/kevin.jpg";
+// import Sam from "../../../../assets/images/sam.jpg";
 import hope from "../../../../assets/images/hope.jpg";
 import { RiDoubleQuotesL } from "react-icons/ri";
 
@@ -16,7 +16,7 @@ export const Testimonials = () => {
       company: "Switch Media Limited",
       comment:
         "Deign Technologies Limited exceeded our expectations with their outstanding web development and IT solutions. The team’s ability to understand our needs and deliver customized solutions has been invaluable. Their expertise and proactive approach have made a real difference in our operations. We’re thrilled with the results and look forward to continuing our partnership with them.",
-      img: Kevin,
+      img: hope,
     },
     {
       id: 2,
@@ -33,7 +33,7 @@ export const Testimonials = () => {
       company: "Laten Media",
       comment:
         "Deign Technologies Limited has been an incredible partner for us. Their expertise in website development and digital marketing has significantly enhanced our online presence. They not only delivered a top-notch website but also provided excellent ongoing support. The team’s professionalism and commitment to quality make them stand out in the industry. I highly recommend their services to anyone looking to elevate their digital footprint.",
-        img: Sam,
+        img: hope,
     },
   ];
 
