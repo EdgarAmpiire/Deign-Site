@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { BsArrowRightShort, BsArrowLeftShort } from "react-icons/bs";
-import Kevin from "../../../../assets/images/Kevin.jpg";
-import Sam from "../../../../assets/images/Sam.jpg";
+import Kevin from "../../../../assets/images/kevin.jpg";
+import Sam from "../../../../assets/images/sam.jpg";
 import hope from "../../../../assets/images/hope.jpg";
 import { RiDoubleQuotesL } from "react-icons/ri";
 
