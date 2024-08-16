@@ -1,10 +1,10 @@
 import sml from "../../../../assets/images/sml.png";
-import laten from "../../../../assets/images/laten.jpeg";
+import laten from "../../../../assets/images/laten.png";
 import ncdc from "../../../../assets/images/ncdc.png";
-import penda from "../../../../assets/images/penda.jpeg";
+import penda from "../../../../assets/images/penda.png";
 import pfu from "../../../../assets/images/pfu.png";
 import tz from "../../../../assets/images/tz.png";
-import ubteb from "../../../../assets/images/ubteb.jpeg";
+import ubteb from "../../../../assets/images/ubteb.png";
 
 
 
@@ -50,7 +50,7 @@ export const Clients = () => {
           <div className=" items-center justify-center ">
             <div className="h-full xs:hidden lg:grid grid-cols-4 justify-between items-center mb-5 ">
               <div className=" flex items-center justify-center">
-                <img src={sml} alt="" className="w-10/12" />
+                <img src={sml} alt="" className="w-11/12" />
               </div>
               <div className=" flex items-center justify-center">
                 <img src={ubteb} alt="" className="w-11/12" />
