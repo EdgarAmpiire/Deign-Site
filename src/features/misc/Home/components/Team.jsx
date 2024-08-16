@@ -1,9 +1,9 @@
 import edgar from "../../../../assets/images/edgar.png";
-import bill from "../../../../assets/images/bill.jpg";
+import Josh from "../../../../assets/images/Josh.jpeg";
 import bob from "../../../../assets/images/bob.jpg";
-import dan from "../../../../assets/images/dan.jpg";
-import hope from "../../../../assets/images/hope.jpg";
-import kevin from "../../../../assets/images/kevin.jpg";
+import Hakiza from "../../../../assets/images/Hakiza.jpeg";
+import Jerry from "../../../../assets/images/Jerry.jpg";
+import Jonah from "../../../../assets/images/Jonah.jpeg";
 import { Link } from "react-router-dom";
 import { BsFillArrowRightCircleFill } from "react-icons/bs";
 
@@ -19,31 +19,31 @@ export const Team = () => {
       id: 2,
       name: "Joshua Wadape",
       title: "Project Manager",
-      img: hope,
+      img: Josh,
     },
     {
       id: 3,
       name: "Jonathan Mwebaze",
       title: "Software Developer",
-      img: bill,
+      img: Jonah,
     },
     {
       id: 4,
       name: "Richard Luvubi",
       title: "Network Engineer",
-      img: kevin,
+      img: bob,
     },
     {
       id: 5,
       name: "Jeremiah Bamwine",
       title: "Web Developer",
-      img: dan,
+      img: Jerry,
     },
     {
       id: 6,
       name: "Chris Hakizimana",
       title: "Graphics Designer",
-      img: bob,
+      img: Hakiza,
     },
   ];
 
