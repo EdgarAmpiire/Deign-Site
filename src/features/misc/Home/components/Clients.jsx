@@ -50,23 +50,23 @@ export const Clients = () => {
           <div className=" items-center justify-center ">
             <div className="h-full xs:hidden lg:grid grid-cols-4 justify-between items-center mb-5 ">
               <div className=" flex items-center justify-center">
-                <img src={sml} alt="" className="w-11/12" />
+                <img src={sml} alt="" className="w-12/12" />
               </div>
               <div className=" flex items-center justify-center">
-                <img src={ubteb} alt="" className="w-11/12" />
+                <img src={ubteb} alt="" className="w-9/12" />
               </div>
               <div className=" flex items-center justify-center">
                 <img src={penda} alt="" className="w-11/12" />
               </div>
               <div className=" flex items-center justify-center">
-                <img src={tz} alt="" className="w-10/12" />
+                <img src={tz} alt="" className="w-11/12" />
               </div>
               <div className=" flex items-center justify-center">
-                <img src={ncdc} alt="" className="w-10/12" />
+                <img src={ncdc} alt="" className="w-11/12" />
               </div>
             
              <div className="flex items-center justify-center">
-                <img src={laten} alt="" className="w-11/12" />
+                <img src={laten} alt="" className="w-9/12" />
               </div>
               <div className=" flex items-center justify-center">
                 <img src={pfu} alt="" className="w-10/12" />
