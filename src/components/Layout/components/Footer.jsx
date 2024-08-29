@@ -21,7 +21,7 @@ export const Footer = () => {
           className="object-cover absolute h-[30rem] lg:h-[rem] w-screen -z-10 "></video> */}
         <img
           src={bg}
-          className="object-cover absolute xs:hidden sm:hidden h-[30rem] lg:h-[rem] w-screen -z-10 "></img>
+          className="object-cover absolute xs:hidden sm:hidden lg:flex h-[30rem] lg:h-[rem] w-screen -z-10 "></img>
         <div className=" grid lg:grid-cols-1 divide-y divide-gray-500 h-full w-full xs:bg-[#042c3f] lg:bg-[#37b767]/10 backdrop-blur-[25px] items-center justify-center xs:px-4 lg:px-[97px]">
           <div
             data-aos="fade-right"
