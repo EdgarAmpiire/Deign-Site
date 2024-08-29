@@ -21,6 +21,7 @@
     "react-grid-gallery": "^1.0.1-alpha.0",
     "react-hook-form": "^7.51.0",
     "react-icons": "^4.12.0",
+    "react-js-tag-audio": "^1.0.0",
     "react-router-dom": "^6.20.1",
     "react-type-animation": "^3.2.0",
     "swiper": "^11.0.5",

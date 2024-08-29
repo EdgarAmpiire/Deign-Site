@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 import { FaLocationDot } from "react-icons/fa6";
 import { FaPhoneAlt } from "react-icons/fa";
 import music from "../../../assets/audio/sport-trailer.mp3";
+// import AudioTag from "reactjs-audiotag";
 
 export const Footer = () => {
   return (
@@ -20,9 +21,8 @@ export const Footer = () => {
           className="object-cover absolute h-[30rem] lg:h-[rem] w-screen -z-10 "></video> */}
         <img
           src={bg}
-          className="object-cover absolute h-[30rem] lg:h-[rem] w-screen -z-10 "
-          ></img>
-        <div  className=" grid lg:grid-cols-1 divide-y divide-gray-500 h-full w-full bg-[#37b767]/10 backdrop-blur-[25px] items-center justify-center xs:px-4 lg:px-[97px]">
+          className="object-cover absolute h-[30rem] lg:h-[rem] w-screen -z-10 "></img>
+        <div className=" grid lg:grid-cols-1 divide-y divide-gray-500 h-full w-full bg-[#37b767]/10 backdrop-blur-[25px] items-center justify-center xs:px-4 lg:px-[97px]">
           <div
             data-aos="fade-right"
             className="w-12/12 my-10 grid xs:grid-row-3 lg:grid-cols-3 xs:gap-5 lg:gap-10 5xl:mx-[30rem]">
@@ -159,22 +159,15 @@ export const Footer = () => {
 
           <div className="py-2 flex justify-between items-center ">
             <div>
-            <h1 className="text-white text-xl font-semibold">
-              &#169; 2024 Deign Technologies Limited.
-            </h1>
+              <h1 className="text-white text-xl font-semibold">
+                &#169; 2024 Deign Technologies Limited.
+              </h1>
             </div>
             <div className="flex items-center justify-end">
-              <div className="">
-
-              <audio controls autoPlay loop>
-               <source src={music} type="audio/mpeg" />
-              </audio>
-              </div>
-              <div >
-                <h1></h1>
-              </div>
+              <audio controls autoPlay loop src={music} type="audio/mpeg">
+              </audio> 
+              
             </div>
-
           </div>
         </div>
       </div>
