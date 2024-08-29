@@ -32,17 +32,17 @@ const Home = () => {
           loop
           autoPlay
           muted
-          className="object-cover absolute h-[100vh] w-screen -z-10 top-0 left-0 bg-opacity-8 bg-black"></video>
+          className="object-cover absolute lg:h-[100vh] h-[100vh] xs:w-screen sm:w-screen lg:w-screen -z-10 top-0 left-0 bg-opacity-8 bg-black"></video>
           </div>
-        <div className="h-[100vh] w-full flex items-start pl-20 2xl:pl-20 justify-start pt-40 pb-10">
+        <div className="h-[100vh] w-full flex items-start lg:pl-20 2xl:pl-20 justify-start lg:pt-40 xs:pt-20 sm:pt-20 pb-10">
           <div className="text-start leading-tight xs:px-2 lg:px-0">
-            <h1 className="text-[#37b767] text-8xl xs:text-4xl lg:text-5xl 2xl:-mt-10 font-bold lg:font-light tracking-[-0.075em]">
+            <h1 className="text-[#37b767] lg:text-8xl xs:text-7xl sm:text-7xl 2xl:-mt-10 font-bold lg:font-light tracking-[-0.075em]">
             Innovate Your
             </h1>
-            <h1 className="text-[#37b767] text-8xl xs:text-4xl lg:text-5xl  font-bold lg:font-light tracking-[-0.075em]">
+            <h1 className="text-[#37b767] lg:text-8xl xs:text-7xl sm:text-7xl  font-bold lg:font-light tracking-[-0.075em]">
             Digital Future
             </h1>
-            <h1 className="text-white text-4xl xs:text-4xl lg:text-5xl xs:mt-5 font-normal 2xl:mt-8 lg:font-light tracking-tight">
+            <h1 className="text-white sm:text-4xl xs:text-4xl lg:text-5xl xs:mt-5 font-normal 2xl:mt-8 lg:font-light tracking-tight">
             Elevating businesses with cutting-edge IT solutions, <br /> exceptional web design, and powerful digital strategies.
             </h1>
 

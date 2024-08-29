@@ -10,7 +10,7 @@ import ubteb from "../../../../assets/images/ubteb.png";
 
 export const Clients = () => {
   return (
-    <div className="flex xs:flex-col lg:flex-row bg-[#042c3f] h-screen lg:items-center overflow-hidden xs:py-8 lg:py-32">
+    <div className="flex xs:flex-col lg:flex-row bg-[#042c3f] lg:h-screen lg:items-center overflow-hidden xs:py-8 lg:py-32">
       <div className="lg:w-4/12  lg:h-full">
         <div className="flex flex-col xs:items-start lg:items-between xs:justify-start lg:justify-between lg:w-12/12 h-full xs:px-4 lg:px-24 ">
           <div>
@@ -44,31 +44,31 @@ export const Clients = () => {
         <div
           data-aos="fade-up"
           data-aos-easing="linear"
-          className="flex flex-col items-center justify-center w-12/12 xs:px-4 lg:px-24">
+          className="flex xs:flex-col items-center justify-center w-12/12 xs:px-4 lg:px-24">
           <div className=" items-center justify-center ">
            
-          <div className=" items-center justify-center ">
-            <div className="h-full xs:hidden lg:grid grid-cols-4 justify-between items-center mb-5 ">
-              <div className=" flex items-center justify-center">
+          <div className="flex items-center justify-center ">
+            <div className="h-full lg:grid lg:grid-cols-4 justify-between items-center lg:mb-5 ">
+              <div className=" flex items-center justify-center xs:my-10 sm:my-10 lg:my-0">
                 <img src={sml} alt="" className="w-12/12" />
               </div>
-              <div className=" flex items-center justify-center">
+              <div className=" flex items-center justify-center xs:my-10 sm:my-10 lg:my-0">
                 <img src={ubteb} alt="" className="w-9/12" />
               </div>
-              <div className=" flex items-center justify-center">
+              <div className=" flex items-center justify-center xs:my-10 sm:my-10 lg:my-0">
                 <img src={penda} alt="" className="w-11/12" />
               </div>
-              <div className=" flex items-center justify-center">
+              <div className=" flex items-center justify-center xs:my-10 sm:my-10 lg:my-0">
                 <img src={tz} alt="" className="w-11/12" />
               </div>
-              <div className=" flex items-center justify-center">
+              <div className=" flex items-center justify-center xs:my-10 sm:my-10 lg:my-0">
                 <img src={ncdc} alt="" className="w-11/12" />
               </div>
             
-             <div className="flex items-center justify-center">
+             <div className="flex items-center justify-center xs:my-10 sm:my-10 lg:my-0">
                 <img src={laten} alt="" className="w-9/12" />
               </div>
-              <div className=" flex items-center justify-center">
+              <div className=" flex items-center justify-center xs:my-10 sm:my-10 lg:my-0">
                 <img src={pfu} alt="" className="w-10/12" />
               </div>
 
