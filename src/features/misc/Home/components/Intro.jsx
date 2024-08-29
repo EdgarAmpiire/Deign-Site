@@ -19,7 +19,7 @@ export const Intro = () => {
           loop
           autoPlay
           muted
-          className="object-cover  h-[80vh] w-screen -z-10 top-0 left-0 bg-black"></video>
+          className="object-cover xs:hidden sm:hidden lg:flex h-[80vh] w-screen -z-10 top-0 left-0 bg-black"></video>
           </div>
         </div>
 
