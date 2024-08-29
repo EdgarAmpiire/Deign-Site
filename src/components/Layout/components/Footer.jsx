@@ -166,7 +166,7 @@ export const Footer = () => {
             <div className="flex items-center justify-end">
               <div className="">
 
-              <audio controls autoPlay muted loop>
+              <audio controls autoPlay loop>
                <source src={music} type="audio/mpeg" />
               </audio>
               </div>
