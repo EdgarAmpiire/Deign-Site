@@ -25,7 +25,7 @@ export const Navbar = () => {
                     <img
                       src={logo}
                       alt="logo"
-                      className="object-contain md:h-24 md:w-96"
+                      className="object-contain md:h-24 md:w-96 xs:w-72 "
                     />
                   </div>
                 </Link>
