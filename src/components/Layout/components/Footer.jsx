@@ -6,6 +6,7 @@ import { MdOutlineMailOutline, MdEmail } from "react-icons/md";
 import { Link } from "react-router-dom";
 import { FaLocationDot } from "react-icons/fa6";
 import { FaPhoneAlt } from "react-icons/fa";
+import music from "../../../assets/audio/sport-trailer.mp3";
 
 export const Footer = () => {
   return (
@@ -152,10 +153,24 @@ export const Footer = () => {
             </div>
           </div>
 
-          <div className="py-5 ">
+          <div className="py-2 flex justify-between items-center ">
+            <div>
             <h1 className="text-white text-xl font-semibold">
               &#169; 2024 Deign Technologies Limited.
             </h1>
+            </div>
+            <div className="flex items-center justify-end">
+              <div className="">
+
+              <audio controls autoPlay muted loop>
+               <source src={music} type="audio/mpeg" />
+              </audio>
+              </div>
+              <div >
+                <h1></h1>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
