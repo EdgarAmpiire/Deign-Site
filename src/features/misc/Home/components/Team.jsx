@@ -1,11 +1,11 @@
 import edgar from "../../../../assets/images/edgar.png";
 import Josh from "../../../../assets/images/Josh.jpeg";
-import bob from "../../../../assets/images/bob.jpg";
+import Brisa from "../../../../assets/images/Brisa.jpg";
 import Hakiza from "../../../../assets/images/Hakiza.jpeg";
 import Jerry from "../../../../assets/images/Jerry.jpg";
 import Jonah from "../../../../assets/images/Jonah.jpeg";
-import { Link } from "react-router-dom";
-import { BsFillArrowRightCircleFill } from "react-icons/bs";
+// import { Link } from "react-router-dom";
+// import { BsFillArrowRightCircleFill } from "react-icons/bs";
 
 export const Team = () => {
   const items = [
@@ -29,9 +29,9 @@ export const Team = () => {
     },
     {
       id: 4,
-      name: "Richard Luvubi",
+      name: "Brisa Mukunde",
       title: "Network Engineer",
-      img: bob,
+      img: Brisa,
     },
     {
       id: 5,
@@ -64,7 +64,7 @@ export const Team = () => {
                   Meet the team that helps to power your brand
                 </h1>
               </div>
-              <Link to="/" data-aos="fade-up">
+              {/* <Link to="/" data-aos="fade-up">
                 <div className="flex items-center mt-5 mr-0 w-fit gap-0 text-[#fefefe] text-opacity-0 hover:text-[#37b767] hover:gap-3 ease-in duration-150   ">
                   <p className=" pr-0 text-[#042c3f] xs:text-2xl lg:text-xl font-bold">
                     See our work
@@ -73,7 +73,7 @@ export const Team = () => {
                     <BsFillArrowRightCircleFill className="text-2xl" />
                   </span>
                 </div>
-              </Link>
+              </Link> */}
             </div>
 
             {items.map((i) => (
