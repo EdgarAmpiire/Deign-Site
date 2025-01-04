@@ -160,7 +160,7 @@ export const Footer = () => {
           <div className="py-2 flex justify-between items-center ">
             <div>
               <h1 className="text-white text-xl font-semibold">
-                &#169; 2024 Deign Technologies Limited.
+                &#169; 2025 Deign Technologies Limited.
               </h1>
             </div>
             <div className="lg:flex items-center justify-end xs:hidden sm:hidden ">
