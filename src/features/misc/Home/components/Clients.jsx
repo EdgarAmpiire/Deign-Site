@@ -5,6 +5,7 @@ import penda from "../../../../assets/images/penda.png";
 import pfu from "../../../../assets/images/pfu.png";
 import tz from "../../../../assets/images/tz.png";
 import ubteb from "../../../../assets/images/ubteb.png";
+import aero from "../../../../assets/images/aero.jpg";
 
 
 
@@ -70,6 +71,9 @@ export const Clients = () => {
               </div>
               <div className=" flex items-center justify-center xs:my-10 sm:my-10 lg:my-0">
                 <img src={pfu} alt="" className="w-10/12" />
+              </div>
+              <div className=" flex items-center justify-center xs:my-10 sm:my-10 lg:my-0">
+                <img src={aero} alt="" className="w-10/12" />
               </div>
 
             </div>
