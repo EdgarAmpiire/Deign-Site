@@ -2,7 +2,7 @@ import { useState } from "react";
 import { BsArrowRightShort, BsArrowLeftShort } from "react-icons/bs";
 import kevin from "../../../../assets/images/kevin.png";
 import sam from "../../../../assets/images/sam.jpeg";
-import hope from "../../../../assets/images/hope.jpg";
+import sekiro from "../../../../assets/images/Sekiro.jpg";
 import { RiDoubleQuotesL } from "react-icons/ri";
 
 export const Testimonials = () => {
@@ -24,7 +24,7 @@ export const Testimonials = () => {
       title: "Director",
       company: "Penda Agency",
       comment: "Working with Deign Technologies Limited has been a game-changer for our business. Their comprehensive approach to digital services, from website management to online marketing, has helped us achieve our goals more efficiently. Their attention to detail and innovative solutions have brought a new level of success to our campaigns. The team is dedicated, reliable, and a pleasure to work with.",
-      img: hope,
+      img: sekiro,
     },
     {
       id: 1,
