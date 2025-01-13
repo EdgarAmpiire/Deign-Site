@@ -42,8 +42,8 @@ const Home = () => {
             <h1 className="text-[#37b767] lg:text-8xl xs:text-7xl sm:text-7xl  font-bold lg:font-light tracking-[-0.075em]">
             Digital Future
             </h1>
-            <h1 className="text-white sm:text-4xl xs:text-4xl lg:text-5xl xs:mt-5 font-normal 2xl:mt-8 lg:font-light tracking-tight">
-            Elevating businesses with cutting-edge IT solutions, <br /> exceptional web design, and powerful digital strategies.
+            <h1 className="text-white sm:text-3xl xs:text-3xl lg:text-4xl xs:mt-5 font-normal 2xl:mt-8 lg:font-light tracking-tight">
+            Elevating businesses with cutting-edge <br /> IT solutions, exceptional web design, <br /> and powerful digital strategies.
             </h1>
 
             {/* <h1 className="text-[#eb252a] xs:mt-6 lg:mt-6 font-light tracking-tight ">
