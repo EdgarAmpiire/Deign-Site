@@ -81,10 +81,13 @@ export const Team = () => {
                 <div id={i.id} className="">
                   <div
                     data-aos="fade-up"
-                    className="group h-[40vh] w-full bg-center bg-cover flex items-end justify-end cursor-pointer "
-                    style={{ backgroundImage: `url(${i.img})` }}>
+                    style={{ backgroundImage: `url(${i.img})`}}
+                    className="group bg-black h-[40vh] w-full bg-center bg-cover flex items-end justify-end cursor-pointer "
+                    >
                     {/* //   <img src={edgar} alt="" className="" /> */}
-                    <div className="w-full py-3 px-3 border-t-2 border-[#37b767] bg-transparent backdrop-blur-[14px] xs:opacity-100 lg:opacity-0 group-hover:opacity-100 group-hover:py-4 ease-in-out duration-500 ">
+                   
+
+                    <div className="absolute w-full py-3 px-3 border-t-2 border-[#37b767] bg-transparent backdrop-blur-[14px] xs:opacity-100 lg:opacity-0 group-hover:opacity-100 group-hover:py-4 ease-in-out duration-500 ">
                       <h1 className="text-[white] font-bold text-xl ">
                         {i.name}
                       </h1>
@@ -92,7 +95,7 @@ export const Team = () => {
                         {i.title}
                       </p>
                     </div>
-                  </div>
+                    </div>
                 </div>
               </>
             ))}
