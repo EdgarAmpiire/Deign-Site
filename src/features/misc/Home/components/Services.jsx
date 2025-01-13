@@ -20,7 +20,7 @@ export const Services = () => {
           <div
             data-aos="fade-up"
             className="mt-5 flex items-center justify-center">
-            <h1 className="text-2xl xs:text-left lg:text-center font-bold text-white tracking-[-.075em] font-outline-2  antialiased">
+            <h1 className="text-2xl xs:text-left lg:text-center font-light text-white tracking-[-.075e] font-outline-2  antialiased">
               Pleasure rationally encounter consequences that are painful. Nor
               again is there anyone who pursues
             </h1>
