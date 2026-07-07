@@ -2,6 +2,7 @@ import PropTypes from "prop-types";
 import edgar from "../../../../assets/images/edgar.webp";
 import josh from "../../../../assets/images/Josh.webp";
 import jerry from "../../../../assets/images/Jerry.webp";
+import hakiza from "../../../../assets/images/Hakiza.jpeg";
 import { Reveal } from "../../../../motion/Reveal";
 import { ParallaxSection } from "../../../../motion/Parallax";
 import { TiltHover } from "../../../../motion/TiltHover";
@@ -12,7 +13,7 @@ const TEAM = [
   { name: "Wadape Joshua", role: "Chief Consultant Officer", img: josh },
   { name: "Lisa Jasmine Atukunda", role: "Operations Manager", initials: "LA" },
   { name: "Jeremiah Bamwine", role: "Web Developer", img: jerry },
-  { name: "Pax Matsiko", role: "Digital Marketing Lead", initials: "PM" },
+  { name: "Chris Hakiza", role: "Graphic Designer", img: hakiza },
   { name: "Maurice Himbaza", role: "Software Developer", initials: "MH" },
 ];
 
