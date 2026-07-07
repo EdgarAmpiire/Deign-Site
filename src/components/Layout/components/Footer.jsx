@@ -73,9 +73,10 @@ export const Footer = () => {
                 <button
                   type="button"
                   onClick={() => scrollToSection(link.id, lenisRef)}
-                  className="text-bone/70 transition-colors duration-300 hover:text-accent"
+                  className="group relative w-fit text-bone/70 transition-colors duration-300 hover:text-accent"
                 >
                   {link.label}
+                  <span className="absolute -bottom-0.5 left-0 h-px w-full origin-left scale-x-0 bg-accent transition-transform duration-500 ease-expo-out group-hover:scale-x-100" />
                 </button>
               </li>
             ))}

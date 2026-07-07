@@ -8,6 +8,8 @@ import {
 import { ParallaxSection, ParallaxLayer } from "../../../../motion/Parallax";
 import { Reveal } from "../../../../motion/Reveal";
 import { CircuitLine } from "../../../../motion/CircuitLine";
+import { FloatingMark } from "../../../../motion/FloatingMark";
+import { TiltHover } from "../../../../motion/TiltHover";
 
 const VALUES = [
   { label: "Customer Focus", icon: HiOutlineHandRaised },
@@ -33,7 +35,8 @@ export const About = () => {
       id="about"
       className="relative overflow-hidden bg-navy-800 px-6 py-28 sm:px-10 lg:px-24 lg:py-40"
     >
-      <ParallaxLayer speed={30} className="pointer-events-none absolute inset-0 flex items-center justify-center opacity-40">
+      {/* deepest layer: circuit tracery */}
+      <ParallaxLayer speed={50} className="pointer-events-none absolute inset-0 flex items-center justify-center opacity-40">
         <CircuitLine
           paths={CIRCUIT_PATHS}
           nodes={CIRCUIT_NODES}
@@ -43,7 +46,19 @@ export const About = () => {
         />
       </ParallaxLayer>
 
-      <div className="relative z-10 mx-auto max-w-6xl">
+      {/* brand marks, quietly floating behind the statement */}
+      <FloatingMark size={300} top="-10%" right="-5%" opacity={0.06} scrollSpeed={110} rotateSpeed={140} />
+      <FloatingMark
+        size={110}
+        bottom="6%"
+        right="18%"
+        opacity={0.1}
+        scrollSpeed={55}
+        rotateSpeed={80}
+        spinDirection={-1}
+      />
+
+      <ParallaxLayer speed={6} className="relative z-10 mx-auto max-w-6xl">
         <Reveal direction="up">
           <span className="text-xs font-semibold uppercase tracking-[0.3em] text-accent">
             Since 2023
@@ -83,20 +98,21 @@ export const About = () => {
 
         <div className="mt-20 grid grid-cols-2 gap-px overflow-hidden rounded-2xl border border-bone/10 bg-bone/10 sm:grid-cols-3 lg:grid-cols-5">
           {VALUES.map(({ label, icon: Icon }, i) => (
-            <Reveal
-              key={label}
-              direction="up"
-              delay={0.05 * i}
-              className="group flex flex-col items-center gap-3 bg-navy-800 px-4 py-10 text-center transition-colors duration-500 ease-expo-out hover:bg-navy-700"
-            >
-              <Icon className="h-7 w-7 text-accent transition-transform duration-500 ease-expo-out group-hover:-translate-y-1" />
-              <span className="text-sm font-semibold text-bone/80">
-                {label}
-              </span>
+            <Reveal key={label} direction="up" delay={0.05 * i}>
+              <TiltHover
+                max={6}
+                data-cursor="hover"
+                className="group flex flex-col items-center gap-3 bg-navy-800 px-4 py-10 text-center transition-[background-color,box-shadow] duration-500 ease-expo-out hover:bg-navy-700 hover:shadow-[inset_0_0_40px_rgba(60,181,74,0.12)]"
+              >
+                <Icon className="h-7 w-7 text-accent transition-transform duration-500 ease-expo-out group-hover:-translate-y-1 group-hover:rotate-6" />
+                <span className="text-sm font-semibold text-bone/80">
+                  {label}
+                </span>
+              </TiltHover>
             </Reveal>
           ))}
         </div>
-      </div>
+      </ParallaxLayer>
     </ParallaxSection>
   );
 };

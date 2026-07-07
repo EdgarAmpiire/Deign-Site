@@ -12,6 +12,8 @@ import {
 } from "react-icons/hi2";
 import { ParallaxSection, ParallaxLayer } from "../../../../motion/Parallax";
 import { Reveal } from "../../../../motion/Reveal";
+import { TiltHover } from "../../../../motion/TiltHover";
+import { FloatingMark } from "../../../../motion/FloatingMark";
 
 const SERVICES = [
   { title: "IT Consultations", icon: HiOutlineChatBubbleLeftRight },
@@ -26,15 +28,18 @@ const SERVICES = [
   { title: "Networking", icon: HiOutlineSignal },
 ];
 
-const DEPTH = [0, 18, -14, 10, -8, 16, -18, 8, -10, 14];
+// stronger, alternating depth so the grid reads as physically staggered
+const DEPTH = [0, 42, -34, 24, -20, 38, -44, 18, -26, 32];
 
 export const Services = () => {
   return (
     <ParallaxSection
       as="section"
       id="services"
-      className="relative bg-navy-900 px-6 py-28 sm:px-10 lg:px-24 lg:py-40"
+      className="relative overflow-hidden bg-navy-900 px-6 py-28 sm:px-10 lg:px-24 lg:py-40"
     >
+      <FloatingMark size={260} top="10%" left="-6%" opacity={0.05} scrollSpeed={100} rotateSpeed={135} />
+
       <div className="relative z-10 mx-auto max-w-6xl">
         <Reveal direction="up">
           <span className="text-xs font-semibold uppercase tracking-[0.3em] text-accent">
@@ -54,13 +59,15 @@ export const Services = () => {
                 direction="up"
                 delay={0.04 * i}
                 data-cursor="hover"
-                className="group relative flex h-52 flex-col justify-between overflow-hidden rounded-2xl border border-bone/10 bg-navy-800 p-6 transition-all duration-500 ease-expo-out hover:-translate-y-2 hover:border-accent/50"
+                className="group relative h-52 overflow-hidden rounded-2xl border border-bone/10 bg-navy-800 transition-[transform,border-color,box-shadow] duration-500 ease-expo-out hover:-translate-y-2 hover:border-accent/50 hover:shadow-[0_20px_50px_rgba(60,181,74,0.18)]"
               >
-                <span className="pointer-events-none absolute inset-0 origin-bottom scale-y-0 bg-gradient-to-t from-accent/25 to-transparent transition-transform duration-500 ease-expo-out group-hover:scale-y-100" />
-                <Icon className="relative z-10 h-8 w-8 text-accent transition-transform duration-500 ease-expo-out group-hover:-translate-y-1 group-hover:scale-110" />
-                <h3 className="relative z-10 text-lg font-bold leading-tight tracking-tight text-bone">
-                  {title}
-                </h3>
+                <TiltHover max={8} className="flex h-full flex-col justify-between p-6">
+                  <span className="pointer-events-none absolute inset-0 origin-bottom scale-y-0 bg-gradient-to-t from-accent/25 to-transparent transition-transform duration-500 ease-expo-out group-hover:scale-y-100" />
+                  <Icon className="relative z-10 h-8 w-8 text-accent transition-transform duration-500 ease-expo-out group-hover:-translate-y-1 group-hover:scale-110 group-hover:rotate-6" />
+                  <h3 className="relative z-10 text-lg font-bold leading-tight tracking-tight text-bone">
+                    {title}
+                  </h3>
+                </TiltHover>
               </Reveal>
             </ParallaxLayer>
           ))}

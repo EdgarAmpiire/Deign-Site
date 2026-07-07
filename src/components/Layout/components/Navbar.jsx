@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import { HiMenu, HiX } from "react-icons/hi";
 import { OrbitLogo } from "../../../motion/OrbitLogo";
+import { Magnetic } from "../../../motion/Magnetic";
 import { useLenis, scrollToSection } from "../../../motion/SmoothScroll";
 
 const LINKS = [
@@ -63,23 +64,26 @@ export const Navbar = () => {
                 type="button"
                 data-cursor="hover"
                 onClick={() => go(link.id)}
-                className="text-sm font-semibold uppercase tracking-wide text-bone/70 transition-colors duration-300 hover:text-accent"
+                className="group relative text-sm font-semibold uppercase tracking-wide text-bone/70 transition-colors duration-300 hover:text-accent"
               >
                 {link.label}
+                <span className="absolute -bottom-1 left-0 h-px w-full origin-left scale-x-0 bg-accent transition-transform duration-500 ease-expo-out group-hover:scale-x-100" />
               </button>
             </li>
           ))}
         </ul>
 
-        <button
+        <Magnetic
+          as="button"
           type="button"
+          strength={0.4}
           data-cursor="label"
           data-cursor-label="Talk"
           onClick={() => go("contact")}
           className="hidden rounded-full border border-accent/40 px-5 py-2.5 text-xs font-bold uppercase tracking-wide text-accent transition-colors duration-300 hover:bg-accent hover:text-navy-900 lg:inline-block"
         >
           Let&apos;s Talk
-        </button>
+        </Magnetic>
 
         <button
           type="button"

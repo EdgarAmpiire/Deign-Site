@@ -1,6 +1,6 @@
 import { createContext, useContext, useRef } from "react";
 import PropTypes from "prop-types";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 import { useInViewGate } from "./useInViewGate";
 import { useMotionProfile } from "./useMotionProfile";
 
@@ -52,13 +52,28 @@ ParallaxSection.propTypes = {
  * travel distance in px across the section's scroll range — positive
  * values drift down as you scroll into the section, negative drift up.
  * Foreground elements should use larger magnitudes than background ones.
+ *
+ * The raw scroll-linked value is run through a soft spring so the layer
+ * settles a beat behind the scroll position instead of tracking it
+ * pixel-for-pixel — that lag is what makes depth read as "expensive"
+ * rather than mechanical. Set `smooth={false}` for layers that must
+ * track scroll exactly (rare — e.g. content that must never separate
+ * from the viewport edge).
  */
-export const ParallaxLayer = ({ children, speed = 60, className = "", style = {} }) => {
+export const ParallaxLayer = ({
+  children,
+  speed = 60,
+  smooth = true,
+  className = "",
+  style = {},
+}) => {
   const ctx = useContext(ParallaxContext);
   const scrollYProgress = ctx?.scrollYProgress;
   const enabled = ctx?.enabled ?? false;
 
-  const y = useTransform(scrollYProgress, [0, 1], [-speed, speed]);
+  const raw = useTransform(scrollYProgress, [0, 1], [-speed, speed]);
+  const springed = useSpring(raw, { stiffness: 55, damping: 20, mass: 1 });
+  const y = smooth ? springed : raw;
 
   return (
     <motion.div
@@ -73,6 +88,7 @@ export const ParallaxLayer = ({ children, speed = 60, className = "", style = {}
 ParallaxLayer.propTypes = {
   children: PropTypes.node,
   speed: PropTypes.number,
+  smooth: PropTypes.bool,
   className: PropTypes.string,
   style: PropTypes.object,
 };

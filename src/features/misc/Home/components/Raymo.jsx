@@ -2,6 +2,8 @@ import { HiArrowUpRight, HiOutlineChatBubbleLeftEllipsis } from "react-icons/hi2
 import { ParallaxSection, ParallaxLayer } from "../../../../motion/Parallax";
 import { Reveal } from "../../../../motion/Reveal";
 import { OrbitLogo } from "../../../../motion/OrbitLogo";
+import { FloatingMark } from "../../../../motion/FloatingMark";
+import { Magnetic } from "../../../../motion/Magnetic";
 
 const RAYMO_URL = "https://raymo-web.onrender.com";
 
@@ -12,9 +14,9 @@ export const Raymo = () => {
       id="work"
       className="relative overflow-hidden bg-navy-950 px-6 py-28 sm:px-10 lg:px-24 lg:py-40"
     >
-      {/* giant background wordmark, drifts slowly */}
+      {/* giant background wordmark, drifts slowest of all — deepest layer */}
       <ParallaxLayer
-        speed={70}
+        speed={110}
         className="pointer-events-none absolute inset-x-0 top-8 flex justify-center select-none"
       >
         <span className="font-black leading-none tracking-tighter text-transparent text-[clamp(6rem,22vw,18rem)] [-webkit-text-stroke:1px_rgba(244,239,226,0.06)]">
@@ -23,13 +25,23 @@ export const Raymo = () => {
       </ParallaxLayer>
 
       <ParallaxLayer
-        speed={-40}
+        speed={-75}
         className="pointer-events-none absolute -right-16 -top-16 opacity-20 lg:opacity-30"
       >
         <OrbitLogo size={320} interactive={false} />
       </ParallaxLayer>
 
-      <div className="relative z-10 mx-auto max-w-6xl">
+      <FloatingMark
+        size={130}
+        bottom="10%"
+        left="4%"
+        opacity={0.07}
+        scrollSpeed={60}
+        rotateSpeed={95}
+        spinDirection={-1}
+      />
+
+      <ParallaxLayer speed={10} className="relative z-10 mx-auto max-w-6xl">
         <Reveal direction="up">
           <span className="text-xs font-semibold uppercase tracking-[0.3em] text-accent">
             Flagship Product
@@ -44,7 +56,7 @@ export const Raymo = () => {
 
         <div className="mt-16 grid gap-12 lg:grid-cols-5 lg:gap-16">
           <Reveal direction="left" delay={0.15} className="lg:col-span-3">
-            <div className="rounded-3xl border border-accent/20 bg-gradient-to-br from-navy-800 to-navy-900 p-8 sm:p-10">
+            <div className="rounded-3xl border border-accent/20 bg-gradient-to-br from-navy-800 to-navy-900 p-8 transition-shadow duration-700 ease-expo-out hover:shadow-[0_30px_80px_rgba(60,181,74,0.15)] sm:p-10">
               <div className="flex items-center gap-3">
                 <span className="flex h-11 w-11 items-center justify-center rounded-full bg-accent/15">
                   <HiOutlineChatBubbleLeftEllipsis className="h-6 w-6 text-accent" />
@@ -65,17 +77,19 @@ export const Raymo = () => {
                 they sleep.
               </p>
 
-              <a
+              <Magnetic
+                as="a"
                 href={RAYMO_URL}
                 target="_blank"
                 rel="noreferrer"
+                strength={0.35}
                 data-cursor="label"
                 data-cursor-label="Visit"
-                className="group mt-8 inline-flex items-center gap-2 rounded-full bg-accent px-7 py-3.5 text-sm font-bold uppercase tracking-wide text-navy-900 transition duration-500 ease-expo-out hover:bg-bone"
+                className="group mt-8 inline-flex items-center gap-2 rounded-full bg-accent px-7 py-3.5 text-sm font-bold uppercase tracking-wide text-navy-900 shadow-[0_0_0_rgba(60,181,74,0)] transition-[background-color,box-shadow] duration-500 ease-expo-out hover:bg-bone hover:shadow-[0_10px_35px_rgba(60,181,74,0.35)]"
               >
                 Visit Raymo
                 <HiArrowUpRight className="h-4 w-4 transition-transform duration-500 ease-expo-out group-hover:translate-x-1 group-hover:-translate-y-1" />
-              </a>
+              </Magnetic>
             </div>
           </Reveal>
 
@@ -108,7 +122,7 @@ export const Raymo = () => {
             </ul>
           </Reveal>
         </div>
-      </div>
+      </ParallaxLayer>
     </ParallaxSection>
   );
 };
