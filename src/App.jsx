@@ -1,14 +1,15 @@
 // import './App.css'
 import AppRoutes from './routes/AppRoutes'
+import { SmoothScrollProvider } from './motion/SmoothScroll'
+import { Cursor } from './motion/Cursor'
 
 function App() {
   return (
-    <>
-    
-    <AppRoutes />
-   
-    </>
+    <SmoothScrollProvider>
+      <Cursor />
+      <AppRoutes />
+    </SmoothScrollProvider>
   )
 }
 
-export default App 
+export default App

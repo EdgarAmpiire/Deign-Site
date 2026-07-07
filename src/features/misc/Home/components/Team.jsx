@@ -1,107 +1,95 @@
-import edgar from "../../../../assets/images/edgar.png";
-import Josh from "../../../../assets/images/Josh.jpeg";
-import Brisa from "../../../../assets/images/Brisa.jpg";
-import Hakiza from "../../../../assets/images/Hakiza.jpeg";
-import Jerry from "../../../../assets/images/Jerry.jpg";
-import Jonah from "../../../../assets/images/Jonah.jpeg";
-// import { Link } from "react-router-dom";
-// import { BsFillArrowRightCircleFill } from "react-icons/bs";
+import PropTypes from "prop-types";
+import edgar from "../../../../assets/images/edgar.webp";
+import josh from "../../../../assets/images/Josh.webp";
+import jerry from "../../../../assets/images/Jerry.webp";
+import hakiza from "../../../../assets/images/Hakiza.jpeg";
+import { Reveal } from "../../../../motion/Reveal";
+import { ParallaxSection } from "../../../../motion/Parallax";
+import { TiltHover } from "../../../../motion/TiltHover";
+import { FloatingMark } from "../../../../motion/FloatingMark";
+
+const TEAM = [
+  { name: "Edgar Ampiire", role: "Director", img: edgar },
+  { name: "Wadape Joshua", role: "Chief Consultant Officer", img: josh },
+  { name: "Lisa Jasmine Atukunda", role: "Operations Manager", initials: "LA" },
+  { name: "Jeremiah Bamwine", role: "Web Developer", img: jerry },
+  { name: "Chris Hakiza", role: "Graphic Designer", img: hakiza },
+  { name: "Maurice Himbaza", role: "Software Developer", initials: "MH" },
+];
+
+const TeamCard = ({ member, delay }) => (
+  <Reveal
+    direction="up"
+    delay={delay}
+    data-cursor="hover"
+    className="group relative aspect-[3/4] overflow-hidden rounded-2xl bg-navy-700 shadow-[0_0_0_rgba(0,0,0,0)] transition-[transform,box-shadow] duration-500 ease-expo-out hover:-translate-y-1.5 hover:shadow-[0_25px_60px_rgba(0,0,0,0.45)]"
+  >
+    <TiltHover max={6} className="absolute inset-0">
+      {member.img ? (
+        <img
+          src={member.img}
+          alt={member.name}
+          loading="lazy"
+          decoding="async"
+          className="absolute inset-0 h-full w-full object-cover object-center grayscale transition-all duration-700 ease-expo-out group-hover:scale-110 group-hover:grayscale-0"
+        />
+      ) : (
+        <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-navy-700 to-navy-900 transition-transform duration-700 ease-expo-out group-hover:scale-110">
+          <span className="font-black text-accent/70 text-[clamp(3rem,8vw,5rem)] tracking-tighter transition-colors duration-700 ease-expo-out group-hover:text-accent">
+            {member.initials}
+          </span>
+        </div>
+      )}
+
+      <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-navy-950/95 via-navy-950/10 to-transparent opacity-80 transition-opacity duration-500 group-hover:opacity-100" />
+
+      <div className="absolute inset-x-0 bottom-0 translate-y-2 p-5 transition-transform duration-500 ease-expo-out group-hover:translate-y-0">
+        <h3 className="text-lg font-bold text-bone">{member.name}</h3>
+        <p className="mt-1 text-sm font-semibold text-accent opacity-0 transition-opacity duration-500 ease-expo-out group-hover:opacity-100">
+          {member.role}
+        </p>
+      </div>
+    </TiltHover>
+  </Reveal>
+);
+
+TeamCard.propTypes = {
+  member: PropTypes.shape({
+    name: PropTypes.string.isRequired,
+    role: PropTypes.string.isRequired,
+    img: PropTypes.string,
+    initials: PropTypes.string,
+  }).isRequired,
+  delay: PropTypes.number,
+};
 
 export const Team = () => {
-  const items = [
-    {
-      id: 1,
-      name: "Edgar Ampiire",
-      title: "Director",
-      img: edgar,
-    },
-    {
-      id: 2,
-      name: "Joshua Wadape",
-      title: "Project Manager",
-      img: Josh,
-    },
-    {
-      id: 3,
-      name: "Jonathan Mwebaze",
-      title: "Software Developer",
-      img: Jonah,
-    },
-    {
-      id: 4,
-      name: "Brisa Mukunde",
-      title: "Network Engineer",
-      img: Brisa,
-    },
-    {
-      id: 5,
-      name: "Jeremiah Bamwine",
-      title: "Web Developer",
-      img: Jerry,
-    },
-    {
-      id: 6,
-      name: "Chris Hakizimana",
-      title: "Graphics Designer",
-      img: Hakiza,
-    },
-  ];
-
   return (
-    <div className=" flex bg-white lg:h-screen items-center justify-center xs:py-8 lg:py-32">
-      <div className="flex flex-col items-center justify-center w-12/12 xs:px-4 lg:px-24">
-        <div className=" items-center justify-center ">
-          <div className="h-fit w-fit overflow-hidden xs:gap-4 lg:gap-0 grid xs:grid-row-4 lg:grid-cols-4 justify-center items-center">
-            <div className="h-[40vh] w-fit lg:col-span-2 flex flex-col items-start py-5 justify-start">
-              <div data-aos="fade-up">
-                <h1 className="xs:text-5xl text-6xl tracking-[-0.075em] lg:text-4xl font-bold text-[#37b767]">Our Team</h1>
-                <div
-                  data-aos="fade-up"
-                  className="p-1 w-3/12 mt-2 bg-[#042c3f]"></div>
-              </div>
-              <div data-aos="fade-up" className="mt-5 overflow-hidden pr-5">
-                <h1 className="xs:text-4xl  lg:text-3xl font-bold text-[#042c3f] tracking-[-.075em] font-outline-2  antialiased">
-                  Meet the team that helps to power your brand
-                </h1>
-              </div>
-              {/* <Link to="/" data-aos="fade-up">
-                <div className="flex items-center mt-5 mr-0 w-fit gap-0 text-[#fefefe] text-opacity-0 hover:text-[#37b767] hover:gap-3 ease-in duration-150   ">
-                  <p className=" pr-0 text-[#042c3f] xs:text-2xl lg:text-xl font-bold">
-                    See our work
-                  </p>
-                  <span className="">
-                    <BsFillArrowRightCircleFill className="text-2xl" />
-                  </span>
-                </div>
-              </Link> */}
-            </div>
+    <ParallaxSection
+      as="section"
+      id="team"
+      className="relative overflow-hidden bg-navy-900 px-6 py-28 sm:px-10 lg:px-24 lg:py-40"
+    >
+      <FloatingMark size={240} bottom="-6%" right="-4%" opacity={0.06} scrollSpeed={95} rotateSpeed={125} spinDirection={-1} />
 
-            {items.map((i) => (
-              <>
-                <div id={i.id} className="">
-                  <div
-                    data-aos="fade-up"
-                    style={{ backgroundImage: `url(${i.img})`}}
-                    className="group bg-black h-[40vh] w-full bg-center bg-cover flex items-end justify-end cursor-pointer "
-                    >
-                    {/* //   <img src={edgar} alt="" className="" /> */}
-                   
+      <div className="relative z-10 mx-auto max-w-6xl">
+        <Reveal direction="up">
+          <span className="text-xs font-semibold uppercase tracking-[0.3em] text-accent">
+            The Team
+          </span>
+        </Reveal>
+        <Reveal direction="up" delay={0.1} className="mt-4 max-w-2xl">
+          <h2 className="font-black leading-[0.98] tracking-tighter text-bone text-[clamp(2.25rem,5.5vw,4rem)]">
+            The people powering your brand.
+          </h2>
+        </Reveal>
 
-                    <div className="absolute w-full py-3 px-3 border-t-2 border-[#37b767] bg-transparent backdrop-blur-[14px] xs:opacity-100 lg:opacity-0 group-hover:opacity-100 group-hover:py-4 ease-in-out duration-500 ">
-                      <h1 className="text-[white] font-bold text-xl ">
-                        {i.name}
-                      </h1>
-                      <p className="text-[#37b767] font-semibold tracking-[-.05em]">
-                        {i.title}
-                      </p>
-                    </div>
-                    </div>
-                </div>
-              </>
-            ))}
-          </div>
+        <div className="mt-16 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:gap-6">
+          {TEAM.map((member, i) => (
+            <TeamCard key={member.name} member={member} delay={0.05 * i} />
+          ))}
         </div>
       </div>
-    </div>
+    </ParallaxSection>
   );
 };

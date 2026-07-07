@@ -11,3 +11,33 @@
         animation-delay: 4s;
     }
 }
+
+@layer base {
+    body {
+        @apply bg-navy-900 text-bone;
+    }
+
+    ::selection {
+        background: #3cb54a;
+        color: #0a2e3f;
+    }
+}
+
+/* custom cursor: only hide the native cursor once the Cursor component
+   confirms it's active (desktop, motion allowed) — see motion/Cursor.jsx */
+.cursor-none-desktop,
+.cursor-none-desktop a,
+.cursor-none-desktop button {
+    cursor: none;
+}
+
+@keyframes scrollcue {
+    0% { transform: translateY(-100%); opacity: 0; }
+    30% { opacity: 1; }
+    100% { transform: translateY(300%); opacity: 0; }
+}
+
+@keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+}

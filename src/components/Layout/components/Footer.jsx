@@ -1,176 +1,129 @@
-import bg from "../../../assets/images/keyboardbg.jpg";
-import logo from "../../../assets/images/Deign-blue.png";
-import { FaFacebookF } from "react-icons/fa6";
 import { FaInstagram, FaWhatsapp } from "react-icons/fa";
-import { MdOutlineMailOutline, MdEmail } from "react-icons/md";
-import { Link } from "react-router-dom";
 import { FaLocationDot } from "react-icons/fa6";
-import { FaPhoneAlt } from "react-icons/fa";
-import music from "../../../assets/audio/sport-trailer.mp3";
-// import AudioTag from "reactjs-audiotag";
+import { HiOutlineEnvelope, HiOutlinePhone } from "react-icons/hi2";
+import { OrbitLogo } from "../../../motion/OrbitLogo";
+import { useLenis, scrollToSection } from "../../../motion/SmoothScroll";
+
+const SERVICES = [
+  "IT Consultations",
+  "Software Development",
+  "Website Development",
+  "Digital Marketing",
+  "Networking",
+  "Graphics Design",
+];
+
+const LINKS = [
+  { id: "about", label: "About" },
+  { id: "services", label: "Services" },
+  { id: "work", label: "Work" },
+  { id: "team", label: "Team" },
+  { id: "contact", label: "Contact" },
+];
 
 export const Footer = () => {
+  const lenisRef = useLenis();
+
   return (
-    <div className="">
-      <div className="lg:h-[30rem] lg:w-full ">
-        {/* <video
-          src={bg}
-          loop
-          autoPlay
-          muted
-          className="object-cover absolute h-[30rem] lg:h-[rem] w-screen -z-10 "></video> */}
-        <img
-          src={bg}
-          className="object-cover absolute xs:hidden sm:hidden lg:flex h-[30rem] lg:h-[rem] w-screen -z-10 "></img>
-        <div className=" grid lg:grid-cols-1 divide-y divide-gray-500 h-full w-full xs:bg-[#042c3f] lg:bg-[#37b767]/10 backdrop-blur-[25px] items-center justify-center xs:px-4 lg:px-[97px]">
-          <div
-            data-aos="fade-right"
-            className="w-12/12 my-10 grid xs:grid-row-3 lg:grid-cols-3 xs:gap-5 lg:gap-10 5xl:mx-[30rem]">
-            <div className="px-5 py-3">
-              <div className="xs:w-9/12 xs:h-10/12 lg:w-8/12 lg:h-9/12">
-                <img src={logo} alt="" />
-              </div>
-              <div className="mt-5">
-                <p className="font-semibold xs:text-lg lg:text-lg text-white">
-                  Elevating businesses with cutting-edge IT solutions,
-                  exceptional web design, and powerful digital strategies.
-                </p>
-              </div>
-              <div className="flex gap-3 mt-10">
-                <div
-                  to={"/"}
-                  className="w-9  h-9 py-2 px-2 flex items-center justify-center bg-transparen bg-gray-700 bg-opacity-30 backdrop-blur-[8px] rounded-md hover:bg-[#37b767] ease-in-out duration-300 transition">
-                  <FaFacebookF className="w-5 h-5 text-white" />
-                </div>
-                <div className="w-9  h-9 py-2 px-2 flex items-center justify-center bg-transparen bg-gray-700 bg-opacity-30 backdrop-blur-[8px] rounded-md hover:bg-[#37b767] ease-in-out duration-300 transition">
-                  <a
-                    href="https://www.instagram.com/deign.tech?igsh=bnY2bWZqYTRtdnBm&utm_source=qr"
-                    target="_blank"
-                    rel="noreferrer">
-                    <FaInstagram className="w-5 h-5 text-white" />
-                  </a>
-                </div>
-                <div
-                  // ?text=Welcome%20to%20Deign%20Technologies%20Limited.%20How%20can%20we%20help%20you%20today?
-
-                  className="w-9  h-9 py-2 px-2 flex items-center justify-center bg-transparen bg-gray-700 bg-opacity-30 backdrop-blur-[8px] rounded-md hover:bg-[#37b767] ease-in-out duration-300 transition">
-                  <a
-                    href="https://wa.me/+256759612485"
-                    target="_blank"
-                    rel="noreferrer">
-                    <FaWhatsapp className="w-5 h-5 text-white" />
-                  </a>
-                </div>
-                <Link className="w-9  h-9 py-2 px-2 flex items-center justify-center bg-transparen bg-gray-700 bg-opacity-30 backdrop-blur-[8px] rounded-md hover:bg-[#37b767] ease-in-out duration-300 transition">
-                  <a
-                    href="mailto:deigntechnologieslimited@gmail.com"
-                    target="_blank"
-                    rel="noreferrer">
-                    <MdOutlineMailOutline className="w-5 h-5 text-white" />
-                  </a>
-                </Link>
-              </div>
-            </div>
-
-            <div className="px-5 py-3">
-              <div className="w-8/12 h-9/12">
-                <h1 className="text-2xl font-bold xs:text-[#37b767] lg:text-white">
-                  Services
-                </h1>
-              </div>
-              <div className="mt-12 flex flex-col gap-1">
-                <Link to={"/"} className="group">
-                  <h1 className="text-lg font-semi  text-white group-hover:text-[#37b767] ease-in-out transition">
-                    Web Development
-                  </h1>
-                </Link>
-                <Link to={"/"} className="group">
-                  <h1 className="text-lg font-semi  text-white group-hover:text-[#37b767] ease-in-out transition">
-                    Software Development
-                  </h1>
-                </Link>
-                <Link to={"/"} className="group">
-                  <h1 className="text-lg font-semi  text-white group-hover:text-[#37b767] ease-in-out transition">
-                    IT Procurement
-                  </h1>
-                </Link>
-                <Link to={"/"} className="group">
-                  <h1 className="text-lg font-semi  text-white group-hover:text-[#37b767] ease-in-out transition">
-                    Networking Services
-                  </h1>
-                </Link>
-                <Link to={"/"} className="group">
-                  <h1 className="text-lg font-semi  text-white group-hover:text-[#37b767] ease-in-out transition">
-                    Graphics Design
-                  </h1>
-                </Link>
-                <Link to={"/"} className="group">
-                  <h1 className="text-lg font-semi  text-white group-hover:text-[#37b767] ease-in-out transition">
-                    Digital Marketing
-                  </h1>
-                </Link>
-              </div>
-            </div>
-
-            <div className="px-5 py-3">
-              <div className="w-8/12 h-9/12">
-                <h1 className="text-2xl font-bold xs:text-[#37b767] lg:text-white">
-                  Address
-                </h1>
-              </div>
-
-              <div className="mt-12 flex flex-col gap-5">
-                <div className="flex items-center justify-center gap-3">
-                  <div to={"/"} className="w-9  h-9 ">
-                    <FaLocationDot className="w-5 h-5 text-[#37b767]" />
-                  </div>
-
-                  <h1 className="text-white antialiased font-semibold">
-                    Plot 21, Kaduyu Lane, Kiwatule. Kampala, Uganda.
-                  </h1>
-                </div>
-
-                <div className="flex items-center justify-start gap-3">
-                  <div to={"/"} className="w-9  h-9 ">
-                    <FaPhoneAlt className="w-5 h-5 text-[#37b767]" />
-                  </div>
-                  <div className="flex flex-col">
-                    <h1 className="text-white antialiased font-semibold">
-                      +256 779-021-140
-                    </h1>
-                    <h1 className="text-white antialiased font-semibold">
-                      +256 759-612-485
-                    </h1>
-                  </div>
-                </div>
-
-                <div className="flex items-start justify-start gap-3">
-                  <div to={"/"} className="w-9  h-9 ">
-                    <MdEmail className="w-5 h-5 text-[#37b767]" />
-                  </div>
-
-                  <h1 className="text-white antialiased font-semibold">
-                    info@deigntech.com
-                  </h1>
-                </div>
-              </div>
-            </div>
+    <footer className="relative border-t border-bone/10 bg-navy-950 px-6 py-16 sm:px-10 lg:px-24">
+      <div className="mx-auto grid max-w-6xl gap-12 lg:grid-cols-4">
+        <div className="lg:col-span-2">
+          <div className="flex items-center gap-2.5">
+            <OrbitLogo size={30} interactive={false} />
+            <span className="text-xl font-black tracking-tight text-bone">
+              Deign
+            </span>
           </div>
-
-          <div className="py-2 flex justify-between items-center ">
-            <div>
-              <h1 className="text-white text-xl font-semibold">
-                &#169; 2025 Deign Technologies Limited.
-              </h1>
-            </div>
-            <div className="lg:flex items-center justify-end xs:hidden sm:hidden ">
-              <audio controls autoPlay loop src={music} type="audio/mpeg">
-              </audio> 
-              
-            </div>
+          <p className="mt-5 max-w-sm text-bone/60">
+            Uganda&apos;s integrated ICT partner &mdash; IT consulting,
+            software, web, and digital marketing, built by a Kampala team
+            that ships.
+          </p>
+          <div className="mt-6 flex items-center gap-3">
+            <a
+              href="https://www.instagram.com/deign.tech?igsh=bnY2bWZqYTRtdnBm&utm_source=qr"
+              target="_blank"
+              rel="noreferrer"
+              data-cursor="hover"
+              aria-label="Deign on Instagram"
+              className="flex h-10 w-10 items-center justify-center rounded-full border border-bone/15 text-bone/70 transition-colors duration-300 hover:border-accent hover:text-accent"
+            >
+              <FaInstagram className="h-4 w-4" />
+            </a>
+            <a
+              href="https://wa.me/256759612485"
+              target="_blank"
+              rel="noreferrer"
+              data-cursor="hover"
+              aria-label="Deign on WhatsApp"
+              className="flex h-10 w-10 items-center justify-center rounded-full border border-bone/15 text-bone/70 transition-colors duration-300 hover:border-accent hover:text-accent"
+            >
+              <FaWhatsapp className="h-4 w-4" />
+            </a>
           </div>
         </div>
+
+        <div>
+          <h3 className="text-sm font-bold uppercase tracking-[0.2em] text-bone/40">
+            Explore
+          </h3>
+          <ul className="mt-5 flex flex-col gap-3">
+            {LINKS.map((link) => (
+              <li key={link.id}>
+                <button
+                  type="button"
+                  onClick={() => scrollToSection(link.id, lenisRef)}
+                  className="group relative w-fit text-bone/70 transition-colors duration-300 hover:text-accent"
+                >
+                  {link.label}
+                  <span className="absolute -bottom-0.5 left-0 h-px w-full origin-left scale-x-0 bg-accent transition-transform duration-500 ease-expo-out group-hover:scale-x-100" />
+                </button>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div>
+          <h3 className="text-sm font-bold uppercase tracking-[0.2em] text-bone/40">
+            Services
+          </h3>
+          <ul className="mt-5 flex flex-col gap-3">
+            {SERVICES.map((service) => (
+              <li key={service} className="text-bone/70">
+                {service}
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
-    </div>
+
+      <div className="mx-auto mt-14 max-w-6xl border-t border-bone/10 pt-8">
+        <div className="flex flex-col gap-4 text-sm text-bone/60 sm:flex-row sm:flex-wrap sm:items-center sm:gap-8">
+          <a
+            href="mailto:eampiire@gmail.com"
+            className="flex items-center gap-2 transition-colors duration-300 hover:text-accent"
+          >
+            <HiOutlineEnvelope className="h-4 w-4 text-accent" />
+            eampiire@gmail.com
+          </a>
+          <a
+            href="tel:+256759612485"
+            className="flex items-center gap-2 transition-colors duration-300 hover:text-accent"
+          >
+            <HiOutlinePhone className="h-4 w-4 text-accent" />
+            0759 612 485
+          </a>
+          <span className="flex items-center gap-2">
+            <FaLocationDot className="h-4 w-4 text-accent" />
+            Plot 21, Kaduyu Lane, Kiwatule, Kampala, Uganda
+          </span>
+        </div>
+
+        <p className="mt-6 text-sm text-bone/40">
+          &copy; {new Date().getFullYear()} Deign Technologies Limited. All
+          rights reserved.
+        </p>
+      </div>
+    </footer>
   );
 };

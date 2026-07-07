@@ -1,115 +1,45 @@
-import {useEffect} from "react"
-import videobg from "../../../assets/videos/herobg2.mp4";
-// import { TypeAnimation } from "react-type-animation";
-import { Intro } from "./components/Intro";
-// import { MdKeyboardArrowDown } from "react-icons/md";
-// import { Photography } from "./components/Photography";
-// import { Videography } from "./components/Videography";
-// import { LiveStream } from "./components/LiveStream";
-import { Clients } from "./components/Clients";
-import { Team } from "./components/Team";
-import { Services } from "./components/Services";
-import { Testimonials } from "./components/Testimonials";
-import { Contact } from "./components/Contact";
-import Aos from "aos";
-import "aos/dist/aos.css";
+import { lazy, Suspense } from "react";
+import { Hero } from "./components/Hero";
+
+// Hero loads eagerly (it's the first paint). Everything below the fold is
+// code-split into its own chunk and only fetched as the user approaches
+// it, so the initial bundle the browser has to parse before the hero can
+// paint doesn't carry the weight of six more sections' worth of JS.
+const About = lazy(() => import("./components/About").then((m) => ({ default: m.About })));
+const Services = lazy(() => import("./components/Services").then((m) => ({ default: m.Services })));
+const Raymo = lazy(() => import("./components/Raymo").then((m) => ({ default: m.Raymo })));
+const Clients = lazy(() => import("./components/Clients").then((m) => ({ default: m.Clients })));
+const Team = lazy(() => import("./components/Team").then((m) => ({ default: m.Team })));
+const ContactCTA = lazy(() => import("./components/ContactCTA").then((m) => ({ default: m.ContactCTA })));
+
+// color-matched, roughly section-height placeholder so a chunk resolving
+// mid-scroll doesn't pop in against a jarring blank flash
+const SectionFallback = ({ dark }) => (
+  <div className={`h-[60vh] w-full ${dark ? "bg-navy-950" : "bg-navy-900"}`} />
+);
 
 const Home = () => {
-  
-  useEffect(() => {
-    Aos.init({duration: 1500});
-  }, []);
-
   return (
-    <div className="flex items-center justify-center">
-
-<div className="5xl:max-w-[95vh] 2xl:items-center 2xl:justify-center">
-      {/* <div className="h-screen -z-10 top-0 left-0 w-full bg-[#010101] bg-opacity-70"> */}
-        <div className="">
-
-        <video
-          src={videobg}
-          loop
-          autoPlay
-          muted
-          className="object-cover absolute lg:h-[100vh] h-[100vh] xs:w-screen sm:w-screen lg:w-screen -z-10 top-0 left-0 bg-opacity-8 bg-black"></video>
-          </div>
-        <div className="h-[100vh] w-full flex items-start lg:pl-20 2xl:pl-20 justify-start lg:pt-40 xs:pt-20 sm:pt-20 pb-10">
-          <div className="text-start leading-tight xs:px-2 lg:px-0">
-            <h1 className="text-[#37b767] lg:text-8xl xs:text-7xl sm:text-7xl 2xl:-mt-10 font-bold lg:font-light tracking-[-0.075em]">
-            Innovate Your
-            </h1>
-            <h1 className="text-[#37b767] lg:text-8xl xs:text-7xl sm:text-7xl  font-bold lg:font-light tracking-[-0.075em]">
-            Digital Future
-            </h1>
-            <h1 className="text-white sm:text-3xl xs:text-3xl lg:text-4xl xs:mt-5 font-normal 2xl:mt-8 lg:font-light tracking-tight">
-            Elevating businesses with cutting-edge <br /> IT solutions, exceptional web design, <br /> and powerful digital strategies.
-            </h1>
-
-            {/* <h1 className="text-[#eb252a] xs:mt-6 lg:mt-6 font-light tracking-tight ">
-              <span className="invisible">.</span>{" "}
-              <span className="text-[#eb252a] xs:text-4xl lg:text-5xl font-bold tracking-tight">
-                <TypeAnimation
-                  sequence={[
-                    "Photography.", // Types 'One'
-                    1000, // Waits 1s
-                    "Videography.", // Deletes 'One' and types 'Two'
-                    1000, // Waits 2s
-                    "Live Streaming.", // Types 'Three' without deleting 'Two'
-                    1000,
-                    "Events.", // Types 'Three' without deleting 'Two'
-                    1000,
-                    "Digital Marketing.", // Types 'Three' without deleting 'Two'
-                    1000,
-                    "Creative Design.", // Types 'Three' without deleting 'Two'
-                    1000,
-                  ]}
-                  speed="99"
-                  deletionSpeed={65}
-                  // omitDeletionAnimation="true"
-                  wrapper="span"
-                  cursor={false}
-                  repeat={Infinity}
-                  // style={{ fontSize: "2em", display: "inline-block" }}
-                />
-              </span>{" "}
-            </h1> */}
-            
-          </div>
-        </div>
-      {/* </div> */}
-      {/* <div className="text-whit">Switch Media Limited - Home</div> */}
-      <div className="lg:h-screen w-full ">
-        <Intro />
-      </div>
-      {/* <div className="h-screen w-full ">
-        <Photography />
-        
-      </div>
-      <div className="h-screen w-full ">
-        <Videography />
-        
-      </div>
-      <div className="h-screen w-full ">
-        <LiveStream />
-        
-      </div> */}
-      <div className=" w-full ">
+    <div className="w-full overflow-x-hidden">
+      <Hero />
+      <Suspense fallback={<SectionFallback />}>
+        <About />
+      </Suspense>
+      <Suspense fallback={<SectionFallback />}>
         <Services />
-      </div>
-      <div className="lg:h-screen w-full ">
-        <Team />
-      </div>
-      <div className="lg:h-screen w-full ">
+      </Suspense>
+      <Suspense fallback={<SectionFallback dark />}>
+        <Raymo />
+      </Suspense>
+      <Suspense fallback={<SectionFallback />}>
         <Clients />
-      </div>
-      <div className="lg:h-screen w-full ">
-        <Testimonials />
-      </div>
-      <div className="lg:h-screen w-full ">
-        <Contact />
-      </div>
-    </div>
+      </Suspense>
+      <Suspense fallback={<SectionFallback />}>
+        <Team />
+      </Suspense>
+      <Suspense fallback={<SectionFallback dark />}>
+        <ContactCTA />
+      </Suspense>
     </div>
   );
 };
