@@ -43,9 +43,17 @@ export const OrbitLogo = ({ size = 220, interactive = true, className = "" }) =>
         alt=""
         aria-hidden="true"
         draggable={false}
+        loading="lazy"
+        decoding="async"
         width="100%"
         height="100%"
-        style={{ display: "block", width: "100%", height: "100%", objectFit: "contain" }}
+        style={{
+          display: "block",
+          width: "100%",
+          height: "100%",
+          objectFit: "contain",
+          willChange: spinEnabled ? "transform" : "auto",
+        }}
         animate={spinEnabled ? { rotate: 360 } : { rotate: 0 }}
         transition={
           spinEnabled

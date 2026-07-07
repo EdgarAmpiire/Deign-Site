@@ -8,6 +8,7 @@ import { Magnetic } from "../../../../motion/Magnetic";
 import { useLenis, scrollToSection } from "../../../../motion/SmoothScroll";
 import { useCursorParallax } from "../../../../motion/useCursorParallax";
 import { useMotionProfile } from "../../../../motion/useMotionProfile";
+import { useInViewGate } from "../../../../motion/useInViewGate";
 
 const CIRCUIT_PATHS = [
   "M-380,-260 L-180,-260 L-180,-140 L-40,-140 L-40,-40",
@@ -30,7 +31,17 @@ const CIRCUIT_NODES = [
 export const Hero = () => {
   const lenisRef = useLenis();
   const { heavyMotionEnabled } = useMotionProfile();
-  const { ref: bgRef, x: bgX, y: bgY } = useCursorParallax(14, heavyMotionEnabled);
+  // gated by this section's own visibility, not just the device profile —
+  // otherwise the cursor tracking for this layer would keep computing
+  // forever once the user scrolls past the hero.
+  const [heroGateRef, heroInView] = useInViewGate({ rootMargin: "0px" });
+  const bgParallaxEnabled = heavyMotionEnabled && heroInView;
+  const { ref: bgRef, x: bgX, y: bgY } = useCursorParallax(14, bgParallaxEnabled);
+
+  const setHeroRefs = (node) => {
+    heroGateRef.current = node;
+    bgRef.current = node;
+  };
 
   return (
     <ParallaxSection
@@ -41,8 +52,8 @@ export const Hero = () => {
       {/* background depth: circuit tracery, drifts slowest, deepest layer */}
       <ParallaxLayer speed={55} className="pointer-events-none absolute inset-0">
         <motion.div
-          ref={bgRef}
-          style={heavyMotionEnabled ? { x: bgX, y: bgY } : undefined}
+          ref={setHeroRefs}
+          style={bgParallaxEnabled ? { x: bgX, y: bgY } : undefined}
           className="absolute inset-0 flex items-center justify-center"
         >
           <CircuitLine

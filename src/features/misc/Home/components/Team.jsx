@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
-import edgar from "../../../../assets/images/edgar.png";
-import josh from "../../../../assets/images/Josh.jpeg";
-import jerry from "../../../../assets/images/Jerry.jpg";
+import edgar from "../../../../assets/images/edgar.webp";
+import josh from "../../../../assets/images/Josh.webp";
+import jerry from "../../../../assets/images/Jerry.webp";
 import { Reveal } from "../../../../motion/Reveal";
 import { ParallaxSection } from "../../../../motion/Parallax";
 import { TiltHover } from "../../../../motion/TiltHover";
@@ -25,9 +25,12 @@ const TeamCard = ({ member, delay }) => (
   >
     <TiltHover max={6} className="absolute inset-0">
       {member.img ? (
-        <div
-          style={{ backgroundImage: `url(${member.img})` }}
-          className="absolute inset-0 bg-cover bg-center grayscale transition-all duration-700 ease-expo-out group-hover:scale-110 group-hover:grayscale-0"
+        <img
+          src={member.img}
+          alt={member.name}
+          loading="lazy"
+          decoding="async"
+          className="absolute inset-0 h-full w-full object-cover object-center grayscale transition-all duration-700 ease-expo-out group-hover:scale-110 group-hover:grayscale-0"
         />
       ) : (
         <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-navy-700 to-navy-900 transition-transform duration-700 ease-expo-out group-hover:scale-110">
@@ -41,7 +44,7 @@ const TeamCard = ({ member, delay }) => (
 
       <div className="absolute inset-x-0 bottom-0 translate-y-2 p-5 transition-transform duration-500 ease-expo-out group-hover:translate-y-0">
         <h3 className="text-lg font-bold text-bone">{member.name}</h3>
-        <p className="mt-1 max-h-0 overflow-hidden text-sm font-semibold text-accent opacity-0 transition-all duration-500 ease-expo-out group-hover:max-h-8 group-hover:opacity-100">
+        <p className="mt-1 text-sm font-semibold text-accent opacity-0 transition-opacity duration-500 ease-expo-out group-hover:opacity-100">
           {member.role}
         </p>
       </div>

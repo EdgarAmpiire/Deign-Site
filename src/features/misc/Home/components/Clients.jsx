@@ -1,10 +1,10 @@
 import { useState } from "react";
-import ncdc from "../../../../assets/images/ncdc.png";
-import penda from "../../../../assets/images/penda.png";
-import tickerzone from "../../../../assets/images/tickerzone logo.png";
-import laten from "../../../../assets/images/laten.png";
-import switchMedia from "../../../../assets/images/switch-logo.png";
-import ubteb from "../../../../assets/images/ubteb.png";
+import ncdc from "../../../../assets/images/ncdc.webp";
+import penda from "../../../../assets/images/penda.webp";
+import tickerzone from "../../../../assets/images/tickerzone-logo.webp";
+import laten from "../../../../assets/images/laten.webp";
+import switchMedia from "../../../../assets/images/switch-logo.webp";
+import ubteb from "../../../../assets/images/ubteb.webp";
 import { ParallaxSection, ParallaxLayer } from "../../../../motion/Parallax";
 import { Reveal } from "../../../../motion/Reveal";
 import { FloatingMark } from "../../../../motion/FloatingMark";
@@ -30,7 +30,7 @@ const Track = () => (
           dark ? "bg-navy-950 border border-bone/10" : "bg-bone"
         }`}
       >
-        <img src={img} alt={name} className="max-h-12 w-auto object-contain" />
+        <img src={img} alt={name} loading="lazy" decoding="async" className="max-h-12 w-auto object-contain" />
       </div>
     ))}
   </>
