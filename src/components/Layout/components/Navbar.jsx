@@ -12,12 +12,10 @@ export const Navbar = () => {
 
   return (
     <div className="">
-      <div className=" w-full top-0 left-0 right-0 bg-transparen bg-gray-10 bg-opacity-10 ackdrop-blur-[8px]  ">
+      <div className=" w-full top-0 left-0 right-0 bg-transparen bg-opacity ackdrop-blur-[8px]  ">
         {/* relative z-100 mx-12 py-3 w-full navbar navbar-expand-lg navbar-light */}
         <nav className="relative z-100 mx-1 navbar navbar-expand-lg navbar-light ">
           <div className="  flex items-center justify-between py-5 w-full">
-            
-
             <div className="flex justify-center items-center">
               <div className="flex items-center justify-center">
                 <Link to={"/"}>
@@ -32,11 +30,9 @@ export const Navbar = () => {
               </div>
             </div>
 
-            
-
             <div className="flex justify-end items-center w-4/12">
-               <div className="flex justify-end items-center gap-5">
-              {/*  <Link to={"/"}>
+              <div className="flex justify-end items-center gap-5">
+                {/*  <Link to={"/"}>
                   <div className="flex items-center justify-center gap-2">
                     <RiCustomerService2Fill className="w-5 h-5 text-gray-200" />
                     <h1 className="text-gray-200 text-sm">+256 771.899.749</h1>
@@ -51,7 +47,7 @@ export const Navbar = () => {
               </div>
 
               <div className="flex justify-start items-center w-4/12">
-               {/*<div className="">
+                {/*<div className="">
                 <Link onClick={() => setOpen(!open)} to={"/"}>
                   <div className="flex justify-center items-center gap-2">
                     <LuMenu
@@ -61,7 +57,7 @@ export const Navbar = () => {
                   </div>
                 </Link>
               </div>*/}
-            </div> 
+              </div>
             </div>
 
             {/* <div
@@ -187,8 +183,6 @@ export const Navbar = () => {
           </div>
         </nav>
       </div>
-
-
 
       {/* Main Menu  */}
       {/* <div className={` flex z-[-1] xs:z-auto xs:static absolute bg-gray-800 w-full left-0 pb-5 xs:pb-0 px-8 xs:px-0  xs:w-8/12 xs:justify-end border-b-2 border-[#FF460C] xs:border-0 transition-all ease-in duration-500 ${
