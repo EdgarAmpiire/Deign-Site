@@ -17,7 +17,7 @@ const TEAM = [
   { name: "Maurice Himbaza", role: "Software Developer", initials: "MH" },
 ];
 
-const TeamCard = ({ member, delay }) => (
+const TeamCard = ({ member, delay }) => ( 
   <Reveal
     direction="up"
     delay={delay}

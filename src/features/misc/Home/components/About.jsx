@@ -66,7 +66,7 @@ export const About = () => {
         </Reveal>
 
         <Reveal direction="up" delay={0.1} className="mt-4 max-w-4xl">
-          <h2 className="font-black leading-[0.98] tracking-tighter text-bone text-[clamp(2.25rem,6vw,4.5rem)]">
+          <h2 className="font-black leading-[0.98] tracking-tighter text-bone text-[clamp(2.25rem,6vw,1.5rem)]">
             We&apos;re Deign Technologies &mdash; Uganda&apos;s integrated ICT
             partner, built to be the go-to team for businesses chasing
             growth through technology.
